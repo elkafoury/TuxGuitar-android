@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_effect.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_effect.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_track.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_track.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_channel_list_item.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_channel_list_item.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_edit.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_edit.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_beat.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_beat.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_view.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_view.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_composition.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_composition.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_duration.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_duration.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_caret.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_caret.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_measure.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_measure.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_browser.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_browser.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_velocity.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_velocity.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/menu/menu_channel_list.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/menu/menu_channel_list.xml"
+    }
+]

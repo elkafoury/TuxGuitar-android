@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_drawer.png",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/drawable-mdpi/ic_drawer.png"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]

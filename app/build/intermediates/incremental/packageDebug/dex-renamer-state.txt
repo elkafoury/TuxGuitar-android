@@ -1,0 +1,7 @@
+#Tue Sep 20 22:42:18 EDT 2016
+base.0=/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_96acecb6d34bb6e6b7934b28658281b143e0b1c0
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6ad8125daf36c62a4c0876eb9a1d0ae9a87fcd97/classes.dex
+base.1=/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6ad8125daf36c62a4c0876eb9a1d0ae9a87fcd97
+file.0=/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_96acecb6d34bb6e6b7934b28658281b143e0b1c0/classes.dex
