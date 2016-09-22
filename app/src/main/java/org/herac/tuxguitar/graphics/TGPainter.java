@@ -35,7 +35,7 @@ public interface TGPainter extends TGResourceFactory, TGResource {
 	public void addOval(float x, float y, float width, float height);
 	
 	public void addRectangle(float x, float y, float width, float height);
-	
+
 	public void setFont(TGFont font);
 	
 	public void setForeground(TGColor color);
@@ -73,5 +73,7 @@ public interface TGPainter extends TGResourceFactory, TGResource {
 	public float getFMDescent();
 	
 	public float getFMWidth(String text);
+
+	public void fillRectangle(int x, int y, int x2, int y2);
 	
 }
