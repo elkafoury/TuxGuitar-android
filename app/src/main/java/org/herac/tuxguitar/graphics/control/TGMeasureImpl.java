@@ -1049,7 +1049,7 @@ public class TGMeasureImpl extends TGMeasure{
 			}
 		}
 	}
-	
+
 	public void paintPlayMode(TGLayout layout,TGPainter painter){
 		if(layout.isPlayModeEnabled() && isPlaying(layout)){
 			float scale = layout.getScale();
@@ -1071,11 +1071,14 @@ public class TGMeasureImpl extends TGMeasure{
 			// Don't uncomment "lineStyle" until be sure SWT bug has fixed.
 			// See bug: https://bugs.eclipse.org/bugs/show_bug.cgi?id=225725
 			//painter.setLineStyle(SWT.LINE_DASH);
-			painter.setLineWidth(1f * scale);
+
+            // we are going to replace this with filling the measure with color instead of a bordered rectangle
+			/*painter.setLineWidth(1f * scale);
 			painter.initPath();
 			painter.setAntialias(false);
 			painter.addRectangle(getPosX() + (5f * scale),y1,width - (10f * scale),(y2 - y1));
-			painter.closePath();
+			painter.closePath();*/
+            painter.fillRectangle((int)(getPosX() + (5f * scale)), (int)y1,  (int)(getPosX())+ (int) (width - (10f * scale)), (int) (y2 ));
 			//painter.setLineStyle(SWT.LINE_SOLID);
 		}
 	}
