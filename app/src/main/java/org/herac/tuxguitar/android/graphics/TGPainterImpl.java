@@ -14,6 +14,7 @@ import android.graphics.Path.Direction;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Typeface;
+import android.util.Log;
 
 public class TGPainterImpl extends TGResourceFactoryImpl implements TGPainter {
 	
@@ -98,7 +99,7 @@ public class TGPainterImpl extends TGResourceFactoryImpl implements TGPainter {
 		this.path.addRect(x, y, x + width, y + height, Direction.CW);
 		this.pathEmpty = false;
 	}
-	
+
 	public void lineTo(float x, float y) {
 		this.path.lineTo(x, y);
 		this.pathEmpty = false;
@@ -229,4 +230,18 @@ public class TGPainterImpl extends TGResourceFactoryImpl implements TGPainter {
 	public Rect toRect(float left, float top, float right, float bottom) {
 		return new Rect(Math.round(left), Math.round(top), Math.round(right), Math.round(bottom));
 	}
+    public void fillRectangle(int x, int y, int x2, int y2) {
+        Rect rt = new Rect(x, y, x2, y2);
+
+        this.paint.setStyle(Paint.Style.FILL);
+        StringBuilder sb = new StringBuilder();
+        sb.append( this.foreground.getHandle(this.alpha));
+        Log.d( "fillRectangle: :  : ", sb.toString());
+        TGColorImpl c= new TGColorImpl(new TGColorModel(250,250,0));
+        this.paint.setColor(c.getHandle(this.alpha));
+        this.paint.setAlpha(50);
+        this.canvas.drawRect(rt, this.paint);
+
+    }
+
 }
