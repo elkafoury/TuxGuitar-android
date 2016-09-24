@@ -1,7 +1,12 @@
 package org.herac.tuxguitar.graphics.control;
 
+import android.graphics.Bitmap;
+
 import java.util.Iterator;
 
+import org.herac.tuxguitar.android.graphics.TGColorImpl;
+import org.herac.tuxguitar.graphics.TGColorModel;
+import org.herac.tuxguitar.graphics.TGImage;
 import org.herac.tuxguitar.graphics.TGPainter;
 import org.herac.tuxguitar.graphics.TGRectangle;
 import org.herac.tuxguitar.graphics.control.painters.TGKeySignaturePainter;
@@ -23,6 +28,12 @@ public class TGNoteImpl extends TGNote {
 	private float scorePosY;
 	
 	private int accidental;
+
+	// for play cursor
+
+	private Bitmap imgCopy;
+
+	private boolean isPlayed;
 	
 	public TGNoteImpl(TGFactory factory) {
 		super(factory);
@@ -223,7 +234,7 @@ public class TGNoteImpl extends TGNote {
 			boolean playing = (layout.isPlayModeEnabled() && getBeatImpl().isPlaying(layout));
 			
 			layout.setScoreNoteStyle(painter,playing);
-			
+			paintScoreNoteLocBar(layout, painter, (int)x,(int)fromY,playing,   true);
 			//----------ligadura---------------------------------------
 			if (isTiedNote()) {
 				TGNoteImpl noteForTie = getNoteForTie();
@@ -656,5 +667,54 @@ public class TGNoteImpl extends TGNote {
 	
 	public float getPosX() {
 		return getBeatImpl().getPosX();
+	}
+
+
+	public void setIsPlayed(boolean p) {
+		this.isPlayed =p;
+	}
+
+
+	public boolean getIsPlayed() {
+		return this.isPlayed;
+	}
+	/**
+	 * Pinta la nota en la partitura
+	 */
+	// elkafoury draw score notes on editing
+	private void paintScoreNoteLocBar(TGLayout layout, TGPainter painter, int x, int yfrom, boolean playing, boolean firstNote) {
+
+		//layout.setScoreNoteStyle(painter, playing);
+
+		// int w=layout.getScoreLineSpacing() * 22;
+		// int w=layout.getScoreSpacing()*3;
+		// int w=layout.getTrackPositionAt(y).getHeight();
+		// float scale = layout.getScale();
+		// int move = (int)((8f - getMeasureImpl().getTrack().stringCount()) *
+		// scale);
+		// int y1 = (y - move);
+		// int y2 = ((y + getMeasureImpl().getTrackImpl().getTabHeight()) ) +
+		// move;
+		// h=((y + getMeasureImpl().getTrackImpl().getTabHeight()) );
+		// painter.setBackground(layout.getResources().getColorBlue()); //
+		// disabled for now
+		// painter.setForeground(layout.getResources().getColorBlue()); //&&
+		// getBeatImpl().isThreadPlaying(layout)
+		// painter.setBackground(layout.getResources().getColorWhite());
+		// painter.setForeground(layout.getResources().getColorBlack());
+		int yc = yfrom -30;
+		int width=5;
+		int h =(int) getMeasureImpl().getTs().getPosition(TGTrackSpacing.POSITION_BOTTOM);
+		if (playing && firstNote) {
+		//	this.imgCopy = painter.createImage( x - 2, yc,width, h);
+			//painter.copyArea(this.imgCopy, x - 2, yc); we might not need this since create image is already copying the image to the imgCopy
+			painter.setAlpha(100);
+			TGColorImpl c= new TGColorImpl(new TGColorModel(0,0,0));
+			painter.fillRectangle(x - 2, yc, x - 2+ width, yc+ h,c);
+			setIsPlayed(true);
+		} else if (this.getIsPlayed()) {
+			//painter.drawImage(this.imgCopy, x - 2, yc);
+		//	painter.drawBitmap(this.imgCopy, x - 2, yc);
+		}
 	}
 }

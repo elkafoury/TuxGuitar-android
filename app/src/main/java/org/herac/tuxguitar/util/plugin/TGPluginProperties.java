@@ -1,5 +1,7 @@
 package org.herac.tuxguitar.util.plugin;
 
+import android.util.Log;
+
 import org.herac.tuxguitar.util.TGContext;
 import org.herac.tuxguitar.util.properties.TGProperties;
 import org.herac.tuxguitar.util.properties.TGPropertiesManager;
@@ -41,6 +43,7 @@ public class TGPluginProperties {
 	}
 	
 	public String createEnabledPropertyKey(String moduleId){
+		Log.d("jiiiiii","elkafoury");
 		return (moduleId + ENABLED_PROPERTY_SUFFIX);
 	}
 	

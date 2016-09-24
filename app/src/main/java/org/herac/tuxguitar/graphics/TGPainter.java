@@ -1,5 +1,8 @@
 package org.herac.tuxguitar.graphics;
 
+import android.graphics.Bitmap;
+import org.herac.tuxguitar.android.graphics.TGColorImpl;
+
 public interface TGPainter extends TGResourceFactory, TGResource {
 	
 	public static final int PATH_DRAW = 0x01;
@@ -74,6 +77,16 @@ public interface TGPainter extends TGResourceFactory, TGResource {
 	
 	public float getFMWidth(String text);
 
-	public void fillRectangle(int x, int y, int x2, int y2);
-	
+	public void fillRectangle(int x, int y, int x2, int y2, TGColorImpl c);
+
+
+	// for the cursor
+	public void copyArea(TGImage image, int x, int y) ;
+
+
+
+	public Bitmap createImage(int x, int y, int x2, int y2);
+
+	public void drawBitmap(Bitmap originalBmp, int x, int  y);
+
 }

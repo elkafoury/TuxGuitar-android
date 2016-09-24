@@ -26,6 +26,10 @@ import org.herac.tuxguitar.song.models.TGMeasure;
 import org.herac.tuxguitar.song.models.TGMeasureHeader;
 import org.herac.tuxguitar.song.models.TGNote;
 
+
+import org.herac.tuxguitar.android.graphics.TGColorImpl;
+import org.herac.tuxguitar.graphics.TGColorModel;
+
 /**
  * @author julian
  * 
@@ -1078,7 +1082,8 @@ public class TGMeasureImpl extends TGMeasure{
 			painter.setAntialias(false);
 			painter.addRectangle(getPosX() + (5f * scale),y1,width - (10f * scale),(y2 - y1));
 			painter.closePath();*/
-            painter.fillRectangle((int)(getPosX() + (5f * scale)), (int)y1,  (int)(getPosX())+ (int) (width - (10f * scale)), (int) (y2 ));
+			TGColorImpl c= new TGColorImpl(new TGColorModel(250,250,0));
+            painter.fillRectangle((int)(getPosX() + (5f * scale)), (int)y1,  (int)(getPosX())+ (int) (width - (10f * scale)), (int) (y2 ),c);
 			//painter.setLineStyle(SWT.LINE_SOLID);
 		}
 	}

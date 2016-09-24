@@ -16,6 +16,9 @@ import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.util.Log;
 
+import android.graphics.Bitmap;
+import org.herac.tuxguitar.graphics.TGResourceFactory;
+
 public class TGPainterImpl extends TGResourceFactoryImpl implements TGPainter {
 	
 	private boolean pathEmpty;
@@ -230,18 +233,47 @@ public class TGPainterImpl extends TGResourceFactoryImpl implements TGPainter {
 	public Rect toRect(float left, float top, float right, float bottom) {
 		return new Rect(Math.round(left), Math.round(top), Math.round(right), Math.round(bottom));
 	}
-    public void fillRectangle(int x, int y, int x2, int y2) {
-        Rect rt = new Rect(x, y, x2, y2);
+    public void fillRectangle(int x, int y, int x2, int y2, TGColorImpl c ) {
+        RectF rt = new RectF(x, y, x2, y2);
 
         this.paint.setStyle(Paint.Style.FILL);
-        StringBuilder sb = new StringBuilder();
-        sb.append( this.foreground.getHandle(this.alpha));
-        Log.d( "fillRectangle: :  : ", sb.toString());
-        TGColorImpl c= new TGColorImpl(new TGColorModel(250,250,0));
+//        StringBuilder sb = new StringBuilder();
+//        sb.append( this.foreground.getHandle(this.alpha));
+//        Log.d( "fillRectangle: :  : ", sb.toString());
+      //  TGColorImpl c= new TGColorImpl(new TGColorModel(250,250,0));
         this.paint.setColor(c.getHandle(this.alpha));
         this.paint.setAlpha(50);
-        this.canvas.drawRect(rt, this.paint);
-
+        //this.canvas.drawRect(rt, this.paint);
+		this.canvas.drawRoundRect(rt,50,50, this.paint);
     }
+
+	public void copyArea(TGImage image, int x, int y) {
+		//this.canvas.drawBitmap(bitmap, x, y, paint);
+		 drawImage(image,x ,y);
+	}
+
+	public Bitmap createImage(int x, int y, int x2, int y2) {
+		int h = canvas.getHeight();
+		int w = canvas.getWidth();
+
+		Bitmap bitmap =  Bitmap.createBitmap(w,h,Bitmap.Config.ARGB_8888 );
+		//TGPainter painterBuffer = bitmap.createPainter();
+		//painterBuffer.copyArea();
+		Canvas canvas = new Canvas(bitmap);
+
+
+		Bitmap selectedRectangle = Bitmap.createBitmap(bitmap,x, y, x2, y2);
+
+	return selectedRectangle;
+	}
+
+    public void drawBitmap(Bitmap originalBmp, int x, int  y){
+        canvas.drawBitmap(originalBmp, 0, 0, new Paint());
+    }
+
+
+
+
+
 
 }
