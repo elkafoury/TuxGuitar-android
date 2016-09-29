@@ -1,5 +1,7 @@
 package org.herac.tuxguitar.editor;
 
+import android.util.Log;
+
 import org.herac.tuxguitar.editor.event.TGRedrawEvent;
 import org.herac.tuxguitar.editor.event.TGUpdateEvent;
 import org.herac.tuxguitar.editor.event.TGUpdateMeasureEvent;
@@ -16,6 +18,7 @@ public class TGEditorManager {
 	
 	private TGContext context;
 	private TGLock lockControl;
+	//private List TGRedrawListener;
 	
 	public TGEditorManager(TGContext context){
 		this.context = context;
@@ -36,7 +39,9 @@ public class TGEditorManager {
 	public void redraw(final TGAbstractContext sourceContext){
 		this.asyncRunLocked(new Runnable() {
 			public void run() {
-				doRedraw(TGRedrawEvent.NORMAL, sourceContext);
+				doRedraw(TGRedrawEvent.NORMAL, sourceContext,false);
+			//	Log.d("tgEditormanager ",String.valueOf(TGRedrawEvent.PLUGIN_NORMAL));
+				doRedraw(TGRedrawEvent.PLUGIN_NORMAL, sourceContext,true);
 			}
 		});
 	}
@@ -48,7 +53,9 @@ public class TGEditorManager {
 	public void redrawPlayingThread(final TGAbstractContext sourceContext){
 		this.asyncRunLocked(new Runnable() {
 			public void run() {
-				doRedraw(TGRedrawEvent.PLAYING_THREAD, sourceContext);
+				doRedraw(TGRedrawEvent.PLAYING_THREAD, sourceContext,false);
+			//	Log.d("tgEditormanager ",String.valueOf(TGRedrawEvent.PLUGIN_PLAYING_THREAD));
+				doRedraw(TGRedrawEvent.PLUGIN_PLAYING_THREAD, sourceContext,true);
 			}
 		});
 	}
@@ -60,7 +67,9 @@ public class TGEditorManager {
 	public void redrawPlayingNewBeat(final TGAbstractContext sourceContext){
 		this.asyncRunLocked(new Runnable() {
 			public void run() {
-				doRedraw(TGRedrawEvent.PLAYING_NEW_BEAT, sourceContext);
+				doRedraw(TGRedrawEvent.PLAYING_NEW_BEAT, sourceContext,false);
+			//	Log.d("tgEditormanager ",String.valueOf(TGRedrawEvent.PLUGIN_PLAYING_NEW_BEAT));
+				doRedraw(TGRedrawEvent.PLUGIN_PLAYING_NEW_BEAT, sourceContext,true);
 			}
 		});
 	}
@@ -127,22 +136,35 @@ public class TGEditorManager {
 	
 	public void addRedrawListener(TGEventListener listener){
 		TGEventManager.getInstance(this.context).addListener(TGRedrawEvent.EVENT_TYPE, listener);
+
 	}
-	
+	public void addPluginRedrawListener(TGEventListener listener){
+		Log.d("lsnr edtr mngr",TGRedrawEvent.PLUGIN_EVENT_TYPE );
+		TGEventManager.getInstance(this.context).addListener(TGRedrawEvent.PLUGIN_EVENT_TYPE, listener);
+	}
 	public void removeRedrawListener(TGEventListener listener){
 		TGEventManager.getInstance(this.context).removeListener(TGRedrawEvent.EVENT_TYPE, listener);
+	}
+	public void removePluginRedrawListener(TGEventListener listener){
+		TGEventManager.getInstance(this.context).removeListener(TGRedrawEvent.PLUGIN_EVENT_TYPE, listener);
 	}
 	
 	public void addUpdateListener(TGEventListener listener){
 		TGEventManager.getInstance(this.context).addListener(TGUpdateEvent.EVENT_TYPE, listener);
+		//TGEventManager.getInstance(this.context).addListener(TGUpdateEvent.PLUGIN_EVENT_TYPE, listener);
 	}
 	
 	public void removeUpdateListener(TGEventListener listener){
 		TGEventManager.getInstance(this.context).removeListener(TGUpdateEvent.EVENT_TYPE, listener);
 	}
 	
-	private void doRedraw(int type, TGAbstractContext context){
-		TGEventManager.getInstance(this.context).fireEvent(new TGRedrawEvent(type, context));
+	private void doRedraw(int type, TGAbstractContext context, Boolean isPlugin){
+		if(isPlugin){
+			TGEventManager.getInstance(this.context).fireEvent(new TGRedrawEvent(type, context,true));
+		}else{
+			TGEventManager.getInstance(this.context).fireEvent(new TGRedrawEvent(type, context));
+		}
+
 	}
 	
 	private void doUpdate(int type, TGAbstractContext context){
