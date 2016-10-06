@@ -1,18 +1,31 @@
 package org.herac.tuxguitar.android.activity;
 
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothSocket;
+import android.bluetooth.BluetoothDevice;
+
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.UUID;
+
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import org.herac.tuxguitar.android.R;
 import org.herac.tuxguitar.android.TuxGuitar;
 import org.herac.tuxguitar.android.action.impl.gui.TGBackAction;
 import org.herac.tuxguitar.android.action.impl.intent.TGProcessIntentAction;
+
 import org.herac.tuxguitar.android.drawer.TGDrawerManager;
 import org.herac.tuxguitar.android.fragment.impl.TGMainFragmentController;
 import org.herac.tuxguitar.android.menu.context.TGContextMenuController;
@@ -21,16 +34,42 @@ import org.herac.tuxguitar.editor.action.TGActionProcessor;
 import org.herac.tuxguitar.editor.action.file.TGLoadTemplateAction;
 import org.herac.tuxguitar.util.TGContext;
 
-public class TGActivity extends AppCompatActivity {
 
+
+
+public class TGActivity extends AppCompatActivity {
+	private static final String TAG = "TGActivity";
 	private boolean destroyed;
 	private TGContext context;
 	private TGContextMenuController contextMenu;
 	private TGNavigationManager navigationManager;
 	private TGDrawerManager drawerManager;
+
+
+	//bluetooth
+
+	private BluetoothAdapter btAdapter = null;
+	private BluetoothDevice device;
+	private BluetoothSocket btSocket = null;
+	private ConnectedThread mConnectedThread;
+
+	public ConnectedThread getmConnectedThread() {
+		return mConnectedThread;
+	}
+
+	private StringBuilder recDataString = new StringBuilder();
+
+
+
+	// SPP UUID service - this should work for most devices
+	private static final UUID BTMODULEUUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+
+	// String for MAC address
+	private static String address;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		Log.d(TAG, "oncreate");
 		super.onCreate(savedInstanceState);
 		
 		this.destroyed = false;
@@ -45,10 +84,19 @@ public class TGActivity extends AppCompatActivity {
 		this.navigationManager = new TGNavigationManager(this);
 		this.drawerManager = new TGDrawerManager(this);
 		this.loadDefaultFragment();
+		Toast.makeText(getBaseContext(), "Started the App", Toast.LENGTH_LONG).show();
+
+		btAdapter = BluetoothAdapter.getDefaultAdapter();       // get Bluetooth adapter
+		checkBTState();
+
+
+
+
 	}
 	
 	@Override
 	protected void onDestroy() {
+		Log.d(TAG, "ondestroy");
 		super.onDestroy();
 		
 		this.destroyTuxGuitar();
@@ -59,12 +107,42 @@ public class TGActivity extends AppCompatActivity {
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
-		
+		Log.d(TAG, "onPostCreate");
+		//bluetooth
+
+		if(address==null){
+			Intent dIntent = new Intent(this,DeviceListActivity.class);
+			startActivity(dIntent);
+		}
 		this.connectPlugins();
 		this.loadDefaultSong();
 		this.drawerManager.syncState();
+
 	}
-	
+
+	@Override
+	public void onPause() {
+		super.onPause();
+		Log.d(TAG, "onPause");
+		//bluetooth
+//		try {
+//			//Don't leave Bluetooth sockets open when leaving activity
+//			if (btSocket != null) {
+//				btSocket.close();
+//			}
+//
+//		} catch (IOException e2) {
+//			//insert code to deal with this
+//		}
+
+		//connectAndSend();
+	}
+	@Override
+	public void onResume() {
+ 		super.onResume();
+		Log.d(TAG, "onResume");
+		connectAndSend(64);
+	}
 	@Override
 	public void onBackPressed() {
 		this.callBackAction();
@@ -164,15 +242,153 @@ public class TGActivity extends AppCompatActivity {
 		TGActionProcessor tgActionProcessor = new TGActionProcessor(findContext(), TGProcessIntentAction.NAME);
 		tgActionProcessor.setAttribute(TGBackAction.ATTRIBUTE_ACTIVITY, this);
 		tgActionProcessor.process();
+
+
 	}
 	
 	public void callBackAction() {
 		TGActionProcessor tgActionProcessor = new TGActionProcessor(findContext(), TGBackAction.NAME);
 		tgActionProcessor.setAttribute(TGBackAction.ATTRIBUTE_ACTIVITY, this);
 		tgActionProcessor.process();
+
+
 	}
 	
 	public boolean isDestroyed() {
 		return this.destroyed;
 	}
+
+	//bluetooth
+	//Checks that the Android device Bluetooth is available and prompts to be turned on if off
+	private void checkBTState() {
+
+		if(btAdapter==null) {
+			Toast.makeText(getBaseContext(), "Device does not support bluetooth", Toast.LENGTH_LONG).show();
+		} else {
+			if (btAdapter.isEnabled()) {
+
+			} else {
+				Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+				startActivityForResult(enableBtIntent, 1);
+			}
+		}
+	}
+	private BluetoothSocket createBluetoothSocket(BluetoothDevice device) throws IOException {
+
+		return  device.createRfcommSocketToServiceRecord(BTMODULEUUID);
+		//creates secure outgoing connecetion with BT device using UUID
+	}
+	public void connectAndSend (int data){
+
+
+		//Get MAC address from DeviceListActivity via intent
+		Intent intent = getIntent();
+
+		//Get the MAC address from the DeviceListActivty via EXTRA
+		address = intent.getStringExtra(DeviceListActivity.EXTRA_DEVICE_ADDRESS);
+
+		//create device and set the MAC address
+
+		if(btAdapter!=null && address!=null){
+			device = btAdapter.getRemoteDevice(address);
+
+
+			if(btSocket==null){
+
+				try {
+					btSocket = createBluetoothSocket(device);
+					Log.d(TAG, "...createBluetoothSocketing...");
+				} catch (IOException e) {
+					Toast.makeText(getBaseContext(), "Socket creation failed", Toast.LENGTH_LONG).show();
+				}
+				// Establish the Bluetooth socket connection.
+				try
+				{
+					btSocket.connect();
+					Log.d(TAG, "...connecting..");
+				} catch (IOException e) {
+					Toast.makeText(getBaseContext(), "Socket connect failed", Toast.LENGTH_LONG).show();
+					try
+					{
+						Log.d(TAG, "...closing..");
+						btSocket.close();
+
+					} catch (IOException e2) {
+						//insert code to deal with this
+						Toast.makeText(getBaseContext(), "Socket close failed", Toast.LENGTH_LONG).show();
+					}
+				}
+
+			}
+			if(mConnectedThread==null){
+				mConnectedThread = new ConnectedThread (btSocket);
+				mConnectedThread.start();
+			}
+
+
+			//I send a character when resuming.beginning transmission to check device is connected
+			//If it is not an exception will be thrown in the write method and finish() will be called
+			mConnectedThread.write(data);
+
+		}
+	}
+
+
+
+	//create new class for connect thread
+	private class ConnectedThread extends Thread {
+		private final InputStream mmInStream;
+		private final OutputStream mmOutStream;
+
+		//creation of the connect thread
+		public ConnectedThread(BluetoothSocket socket) {
+			InputStream tmpIn = null;
+			OutputStream tmpOut = null;
+
+			try {
+				//Create I/O streams for connection
+				tmpIn = socket.getInputStream();
+				tmpOut = socket.getOutputStream();
+			} catch (IOException e) { }
+
+			mmInStream = tmpIn;
+			mmOutStream = tmpOut;
+		}
+
+
+		public void run() {
+			byte[] buffer = new byte[256];
+			int bytes;
+
+
+		}
+		//write method
+		public void write(int input) {
+			byte[] msgBuffer = toBytes(input);           //converts entered String into bytes
+			try {
+				Log.d(TAG, "...tring to write.."+ msgBuffer);
+				mmOutStream.write(msgBuffer);                //write bytes over BT connection via outstream
+				// Log.d(TAG, "...mmOutStream.."+ String.valueOf(msgBuffer) );
+			} catch (IOException e) {
+				Log.d(TAG, "...mmOutStream  cannot write.."+ e.getMessage());
+				//if you cannot write, close the application
+				//  Toast.makeText(activity, "Connection Failure", Toast.LENGTH_LONG).show();
+				//  activity.finish();
+
+			}
+		}
+
+		private byte[] toBytes(int i)
+		{
+			byte[] result = new byte[1];
+
+
+
+			Byte b = Byte.valueOf(i+"");
+			result[0] =b;
+			Log.d(TAG, "converted to "+ b);
+			return result;
+		}
+	}
+
 }
