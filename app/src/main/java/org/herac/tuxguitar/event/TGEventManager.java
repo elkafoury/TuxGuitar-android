@@ -1,5 +1,7 @@
 package org.herac.tuxguitar.event;
 
+import android.util.Log;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,6 +19,7 @@ public class TGEventManager {
 	
 	public void addListener(String eventType, TGEventListener listener){
 		if( eventType != null ) {
+			Log.d("adding to listener", eventType);
 			this.findEventHandler(eventType).addListener(listener);
 		}
 	}

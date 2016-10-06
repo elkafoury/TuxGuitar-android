@@ -7,11 +7,32 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 90,
-                    "endOffset": 141
+                    "endLine": 7,
+                    "endColumn": 12,
+                    "endOffset": 351
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/values-v21/styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endLine": 7,
+                        "endColumn": 12,
+                        "endOffset": 313
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 356,
+                    "endColumn": 90,
+                    "endOffset": 442
+                },
+                "from": {
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -23,14 +44,14 @@
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 146,
+                    "startOffset": 447,
                     "endColumn": 102,
-                    "endOffset": 244
+                    "endOffset": 545
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -42,14 +63,14 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 249,
+                    "startOffset": 550,
                     "endColumn": 102,
-                    "endOffset": 347
+                    "endOffset": 648
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -61,14 +82,14 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 352,
+                    "startOffset": 653,
                     "endColumn": 104,
-                    "endOffset": 452
+                    "endOffset": 753
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -80,14 +101,14 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 457,
+                    "startOffset": 758,
                     "endColumn": 106,
-                    "endOffset": 559
+                    "endOffset": 860
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -99,14 +120,14 @@
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 564,
+                    "startOffset": 865,
                     "endColumn": 108,
-                    "endOffset": 668
+                    "endOffset": 969
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -118,14 +139,14 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 673,
+                    "startOffset": 974,
                     "endColumn": 108,
-                    "endOffset": 777
+                    "endOffset": 1078
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -137,14 +158,14 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 782,
+                    "startOffset": 1083,
                     "endColumn": 108,
-                    "endOffset": 886
+                    "endOffset": 1187
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -156,14 +177,14 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 891,
+                    "startOffset": 1192,
                     "endColumn": 108,
-                    "endOffset": 995
+                    "endOffset": 1296
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -175,14 +196,14 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1000,
+                    "startOffset": 1301,
                     "endColumn": 108,
-                    "endOffset": 1104
+                    "endOffset": 1405
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -194,14 +215,14 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1109,
+                    "startOffset": 1410,
                     "endColumn": 106,
-                    "endOffset": 1211
+                    "endOffset": 1512
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -213,14 +234,14 @@
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1216,
+                    "startOffset": 1517,
                     "endColumn": 102,
-                    "endOffset": 1314
+                    "endOffset": 1615
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -232,14 +253,14 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1319,
+                    "startOffset": 1620,
                     "endColumn": 118,
-                    "endOffset": 1433
+                    "endOffset": 1734
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -251,15 +272,15 @@
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1438,
-                    "endLine": 16,
+                    "startOffset": 1739,
+                    "endLine": 22,
                     "endColumn": 12,
-                    "endOffset": 1588
+                    "endOffset": 1889
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -272,15 +293,15 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1593,
-                    "endLine": 18,
+                    "startOffset": 1894,
+                    "endLine": 24,
                     "endColumn": 12,
-                    "endOffset": 1743
+                    "endOffset": 2044
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -293,14 +314,14 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1748,
+                    "startOffset": 2049,
                     "endColumn": 104,
-                    "endOffset": 1848
+                    "endOffset": 2149
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -312,14 +333,14 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1853,
+                    "startOffset": 2154,
                     "endColumn": 120,
-                    "endOffset": 1969
+                    "endOffset": 2270
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -331,14 +352,14 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1974,
+                    "startOffset": 2275,
                     "endColumn": 100,
-                    "endOffset": 2070
+                    "endOffset": 2371
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -350,15 +371,15 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2075,
-                    "endLine": 23,
+                    "startOffset": 2376,
+                    "endLine": 29,
                     "endColumn": 12,
-                    "endOffset": 2217
+                    "endOffset": 2518
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -371,15 +392,15 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2222,
-                    "endLine": 25,
+                    "startOffset": 2523,
+                    "endLine": 31,
                     "endColumn": 12,
-                    "endOffset": 2358
+                    "endOffset": 2659
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -392,14 +413,14 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2363,
+                    "startOffset": 2664,
                     "endColumn": 102,
-                    "endOffset": 2461
+                    "endOffset": 2762
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -411,14 +432,14 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 2466,
+                    "startOffset": 2767,
                     "endColumn": 118,
-                    "endOffset": 2580
+                    "endOffset": 2881
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -430,14 +451,14 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 2585,
+                    "startOffset": 2886,
                     "endColumn": 106,
-                    "endOffset": 2687
+                    "endOffset": 2988
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -449,14 +470,14 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 2692,
+                    "startOffset": 2993,
                     "endColumn": 102,
-                    "endOffset": 2790
+                    "endOffset": 3091
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -468,15 +489,15 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 2795,
-                    "endLine": 31,
+                    "startOffset": 3096,
+                    "endLine": 37,
                     "endColumn": 12,
-                    "endOffset": 2945
+                    "endOffset": 3246
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -489,15 +510,15 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2950,
-                    "endLine": 33,
+                    "startOffset": 3251,
+                    "endLine": 39,
                     "endColumn": 12,
-                    "endOffset": 3116
+                    "endOffset": 3417
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -510,15 +531,15 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3121,
-                    "endLine": 35,
+                    "startOffset": 3422,
+                    "endLine": 41,
                     "endColumn": 12,
-                    "endOffset": 3265
+                    "endOffset": 3566
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -531,15 +552,15 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 3270,
-                    "endLine": 37,
+                    "startOffset": 3571,
+                    "endLine": 43,
                     "endColumn": 12,
-                    "endOffset": 3430
+                    "endOffset": 3731
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
@@ -552,15 +573,15 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 3435,
-                    "endLine": 39,
+                    "startOffset": 3736,
+                    "endLine": 45,
                     "endColumn": 12,
-                    "endOffset": 3587
+                    "endOffset": 3888
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -573,15 +594,15 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 3592,
-                    "endLine": 41,
+                    "startOffset": 3893,
+                    "endLine": 47,
                     "endColumn": 12,
-                    "endOffset": 3738
+                    "endOffset": 4039
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 4,
@@ -594,14 +615,14 @@
             },
             {
                 "to": {
-                    "startLine": 42,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 3743,
+                    "startOffset": 4044,
                     "endColumn": 118,
-                    "endOffset": 3857
+                    "endOffset": 4158
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -613,15 +634,15 @@
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 3862,
-                    "endLine": 47,
+                    "startOffset": 4163,
+                    "endLine": 53,
                     "endColumn": 12,
-                    "endOffset": 4229
+                    "endOffset": 4530
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
@@ -634,15 +655,15 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 4234,
-                    "endLine": 49,
+                    "startOffset": 4535,
+                    "endLine": 55,
                     "endColumn": 12,
-                    "endOffset": 4378
+                    "endOffset": 4679
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
@@ -655,15 +676,15 @@
             },
             {
                 "to": {
-                    "startLine": 50,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 4383,
-                    "endLine": 51,
+                    "startOffset": 4684,
+                    "endLine": 57,
                     "endColumn": 12,
-                    "endOffset": 4527
+                    "endOffset": 4828
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
@@ -676,14 +697,14 @@
             },
             {
                 "to": {
-                    "startLine": 52,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 4532,
+                    "startOffset": 4833,
                     "endColumn": 111,
-                    "endOffset": 4639
+                    "endOffset": 4940
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
@@ -695,14 +716,14 @@
             },
             {
                 "to": {
-                    "startLine": 53,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 4644,
+                    "startOffset": 4945,
                     "endColumn": 146,
-                    "endOffset": 4786
+                    "endOffset": 5087
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 53,
                         "startColumn": 4,
@@ -714,15 +735,15 @@
             },
             {
                 "to": {
-                    "startLine": 54,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 4791,
-                    "endLine": 55,
+                    "startOffset": 5092,
+                    "endLine": 61,
                     "endColumn": 12,
-                    "endOffset": 4939
+                    "endOffset": 5240
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
@@ -735,15 +756,15 @@
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 4944,
-                    "endLine": 57,
+                    "startOffset": 5245,
+                    "endLine": 63,
                     "endColumn": 12,
-                    "endOffset": 5086
+                    "endOffset": 5387
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -756,14 +777,14 @@
             },
             {
                 "to": {
-                    "startLine": 58,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 5091,
+                    "startOffset": 5392,
                     "endColumn": 74,
-                    "endOffset": 5161
+                    "endOffset": 5462
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -775,14 +796,14 @@
             },
             {
                 "to": {
-                    "startLine": 59,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 5166,
+                    "startOffset": 5467,
                     "endColumn": 88,
-                    "endOffset": 5250
+                    "endOffset": 5551
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 59,
                         "startColumn": 4,
@@ -794,14 +815,14 @@
             },
             {
                 "to": {
-                    "startLine": 60,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 5255,
+                    "startOffset": 5556,
                     "endColumn": 86,
-                    "endOffset": 5337
+                    "endOffset": 5638
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 4,
@@ -813,14 +834,14 @@
             },
             {
                 "to": {
-                    "startLine": 61,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 5342,
+                    "startOffset": 5643,
                     "endColumn": 100,
-                    "endOffset": 5438
+                    "endOffset": 5739
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
@@ -832,14 +853,14 @@
             },
             {
                 "to": {
-                    "startLine": 62,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 5443,
+                    "startOffset": 5744,
                     "endColumn": 102,
-                    "endOffset": 5541
+                    "endOffset": 5842
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -851,15 +872,15 @@
             },
             {
                 "to": {
-                    "startLine": 63,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 5546,
-                    "endLine": 106,
+                    "startOffset": 5847,
+                    "endLine": 112,
                     "endColumn": 12,
-                    "endOffset": 8609
+                    "endOffset": 8910
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 63,
                         "startColumn": 4,
@@ -872,15 +893,15 @@
             },
             {
                 "to": {
-                    "startLine": 107,
+                    "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 8614,
-                    "endLine": 109,
+                    "startOffset": 8915,
+                    "endLine": 115,
                     "endColumn": 12,
-                    "endOffset": 8795
+                    "endOffset": 9096
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 107,
                         "startColumn": 4,
@@ -893,15 +914,15 @@
             },
             {
                 "to": {
-                    "startLine": 110,
+                    "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 8800,
-                    "endLine": 153,
+                    "startOffset": 9101,
+                    "endLine": 159,
                     "endColumn": 12,
-                    "endOffset": 11875
+                    "endOffset": 12176
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 110,
                         "startColumn": 4,
@@ -914,15 +935,15 @@
             },
             {
                 "to": {
-                    "startLine": 154,
+                    "startLine": 160,
                     "startColumn": 4,
-                    "startOffset": 11880,
-                    "endLine": 156,
+                    "startOffset": 12181,
+                    "endLine": 162,
                     "endColumn": 12,
-                    "endOffset": 12073
+                    "endOffset": 12374
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 154,
                         "startColumn": 4,
@@ -935,15 +956,15 @@
             },
             {
                 "to": {
-                    "startLine": 157,
+                    "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 12078,
-                    "endLine": 159,
+                    "startOffset": 12379,
+                    "endLine": 165,
                     "endColumn": 12,
-                    "endOffset": 12273
+                    "endOffset": 12574
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 157,
                         "startColumn": 4,
@@ -956,15 +977,15 @@
             },
             {
                 "to": {
-                    "startLine": 160,
+                    "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 12278,
-                    "endLine": 161,
+                    "startOffset": 12579,
+                    "endLine": 167,
                     "endColumn": 12,
-                    "endOffset": 12396
+                    "endOffset": 12697
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 160,
                         "startColumn": 4,
@@ -977,15 +998,15 @@
             },
             {
                 "to": {
-                    "startLine": 162,
+                    "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 12401,
-                    "endLine": 163,
+                    "startOffset": 12702,
+                    "endLine": 169,
                     "endColumn": 12,
-                    "endOffset": 12519
+                    "endOffset": 12820
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 162,
                         "startColumn": 4,
@@ -998,15 +1019,15 @@
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 12524,
-                    "endLine": 165,
+                    "startOffset": 12825,
+                    "endLine": 171,
                     "endColumn": 12,
-                    "endOffset": 12632
+                    "endOffset": 12933
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 164,
                         "startColumn": 4,
@@ -1019,15 +1040,15 @@
             },
             {
                 "to": {
-                    "startLine": 166,
+                    "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 12637,
-                    "endLine": 168,
+                    "startOffset": 12938,
+                    "endLine": 174,
                     "endColumn": 12,
-                    "endOffset": 12815
+                    "endOffset": 13116
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 166,
                         "startColumn": 4,
@@ -1040,15 +1061,15 @@
             },
             {
                 "to": {
-                    "startLine": 169,
+                    "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 12820,
-                    "endLine": 170,
+                    "startOffset": 13121,
+                    "endLine": 176,
                     "endColumn": 12,
-                    "endOffset": 12946
+                    "endOffset": 13247
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 169,
                         "startColumn": 4,
@@ -1061,15 +1082,15 @@
             },
             {
                 "to": {
-                    "startLine": 171,
+                    "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 12951,
-                    "endLine": 173,
+                    "startOffset": 13252,
+                    "endLine": 179,
                     "endColumn": 12,
-                    "endOffset": 13147
+                    "endOffset": 13448
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 171,
                         "startColumn": 4,
@@ -1082,14 +1103,14 @@
             },
             {
                 "to": {
-                    "startLine": 174,
+                    "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 13152,
+                    "startOffset": 13453,
                     "endColumn": 88,
-                    "endOffset": 13236
+                    "endOffset": 13537
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 174,
                         "startColumn": 4,
@@ -1101,14 +1122,14 @@
             },
             {
                 "to": {
-                    "startLine": 175,
+                    "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 13241,
+                    "startOffset": 13542,
                     "endColumn": 110,
-                    "endOffset": 13347
+                    "endOffset": 13648
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 175,
                         "startColumn": 4,
@@ -1120,15 +1141,15 @@
             },
             {
                 "to": {
-                    "startLine": 176,
+                    "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 13352,
-                    "endLine": 178,
+                    "startOffset": 13653,
+                    "endLine": 184,
                     "endColumn": 12,
-                    "endOffset": 13580
+                    "endOffset": 13881
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 176,
                         "startColumn": 4,
@@ -1141,14 +1162,14 @@
             },
             {
                 "to": {
-                    "startLine": 179,
+                    "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 13585,
+                    "startOffset": 13886,
                     "endColumn": 100,
-                    "endOffset": 13681
+                    "endOffset": 13982
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 179,
                         "startColumn": 4,
@@ -1160,14 +1181,14 @@
             },
             {
                 "to": {
-                    "startLine": 180,
+                    "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 13686,
+                    "startOffset": 13987,
                     "endColumn": 94,
-                    "endOffset": 13776
+                    "endOffset": 14077
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 180,
                         "startColumn": 4,
@@ -1179,14 +1200,14 @@
             },
             {
                 "to": {
-                    "startLine": 181,
+                    "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 13781,
+                    "startOffset": 14082,
                     "endColumn": 122,
-                    "endOffset": 13899
+                    "endOffset": 14200
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 181,
                         "startColumn": 4,
@@ -1198,14 +1219,14 @@
             },
             {
                 "to": {
-                    "startLine": 182,
+                    "startLine": 188,
                     "startColumn": 4,
-                    "startOffset": 13904,
+                    "startOffset": 14205,
                     "endColumn": 128,
-                    "endOffset": 14028
+                    "endOffset": 14329
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 182,
                         "startColumn": 4,
@@ -1217,14 +1238,14 @@
             },
             {
                 "to": {
-                    "startLine": 183,
+                    "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 14033,
+                    "startOffset": 14334,
                     "endColumn": 116,
-                    "endOffset": 14145
+                    "endOffset": 14446
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 183,
                         "startColumn": 4,
@@ -1236,15 +1257,15 @@
             },
             {
                 "to": {
-                    "startLine": 184,
+                    "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 14150,
-                    "endLine": 186,
+                    "startOffset": 14451,
+                    "endLine": 192,
                     "endColumn": 12,
-                    "endOffset": 14322
+                    "endOffset": 14623
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 184,
                         "startColumn": 4,
@@ -1257,14 +1278,14 @@
             },
             {
                 "to": {
-                    "startLine": 187,
+                    "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 14327,
+                    "startOffset": 14628,
                     "endColumn": 98,
-                    "endOffset": 14421
+                    "endOffset": 14722
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 187,
                         "startColumn": 4,
@@ -1276,15 +1297,15 @@
             },
             {
                 "to": {
-                    "startLine": 188,
+                    "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 14426,
-                    "endLine": 189,
+                    "startOffset": 14727,
+                    "endLine": 195,
                     "endColumn": 12,
-                    "endOffset": 14556
+                    "endOffset": 14857
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 188,
                         "startColumn": 4,
@@ -1297,15 +1318,15 @@
             },
             {
                 "to": {
-                    "startLine": 190,
+                    "startLine": 196,
                     "startColumn": 4,
-                    "startOffset": 14561,
-                    "endLine": 191,
+                    "startOffset": 14862,
+                    "endLine": 197,
                     "endColumn": 12,
-                    "endOffset": 14699
+                    "endOffset": 15000
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 190,
                         "startColumn": 4,
@@ -1318,15 +1339,15 @@
             },
             {
                 "to": {
-                    "startLine": 192,
+                    "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 14704,
-                    "endLine": 193,
+                    "startOffset": 15005,
+                    "endLine": 199,
                     "endColumn": 12,
-                    "endOffset": 14834
+                    "endOffset": 15135
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 192,
                         "startColumn": 4,
@@ -1339,15 +1360,15 @@
             },
             {
                 "to": {
-                    "startLine": 194,
+                    "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 14839,
-                    "endLine": 195,
+                    "startOffset": 15140,
+                    "endLine": 201,
                     "endColumn": 12,
-                    "endOffset": 14953
+                    "endOffset": 15254
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 194,
                         "startColumn": 4,
@@ -1360,15 +1381,15 @@
             },
             {
                 "to": {
-                    "startLine": 196,
+                    "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 14958,
-                    "endLine": 199,
+                    "startOffset": 15259,
+                    "endLine": 205,
                     "endColumn": 12,
-                    "endOffset": 15154
+                    "endOffset": 15455
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 196,
                         "startColumn": 4,
@@ -1381,15 +1402,15 @@
             },
             {
                 "to": {
-                    "startLine": 200,
+                    "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15159,
-                    "endLine": 201,
+                    "startOffset": 15460,
+                    "endLine": 207,
                     "endColumn": 12,
-                    "endOffset": 15273
+                    "endOffset": 15574
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 200,
                         "startColumn": 4,
@@ -1402,14 +1423,14 @@
             },
             {
                 "to": {
-                    "startLine": 202,
+                    "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 15278,
+                    "startOffset": 15579,
                     "endColumn": 92,
-                    "endOffset": 15366
+                    "endOffset": 15667
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 202,
                         "startColumn": 4,
@@ -1421,14 +1442,14 @@
             },
             {
                 "to": {
-                    "startLine": 203,
+                    "startLine": 209,
                     "startColumn": 4,
-                    "startOffset": 15371,
+                    "startOffset": 15672,
                     "endColumn": 110,
-                    "endOffset": 15477
+                    "endOffset": 15778
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 203,
                         "startColumn": 4,
@@ -1440,14 +1461,14 @@
             },
             {
                 "to": {
-                    "startLine": 204,
+                    "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 15482,
+                    "startOffset": 15783,
                     "endColumn": 55,
-                    "endOffset": 15533
+                    "endOffset": 15834
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 204,
                         "startColumn": 4,
@@ -1459,15 +1480,15 @@
             },
             {
                 "to": {
-                    "startLine": 205,
+                    "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 15538,
-                    "endLine": 206,
+                    "startOffset": 15839,
+                    "endLine": 212,
                     "endColumn": 12,
-                    "endOffset": 15640
+                    "endOffset": 15941
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 205,
                         "startColumn": 4,
@@ -1480,15 +1501,15 @@
             },
             {
                 "to": {
-                    "startLine": 207,
+                    "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 15645,
-                    "endLine": 210,
+                    "startOffset": 15946,
+                    "endLine": 216,
                     "endColumn": 12,
-                    "endOffset": 15835
+                    "endOffset": 16136
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 207,
                         "startColumn": 4,
@@ -1501,15 +1522,15 @@
             },
             {
                 "to": {
-                    "startLine": 211,
+                    "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 15840,
-                    "endLine": 212,
+                    "startOffset": 16141,
+                    "endLine": 218,
                     "endColumn": 12,
-                    "endOffset": 15946
+                    "endOffset": 16247
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 211,
                         "startColumn": 4,
@@ -1522,15 +1543,15 @@
             },
             {
                 "to": {
-                    "startLine": 213,
+                    "startLine": 219,
                     "startColumn": 4,
-                    "startOffset": 15951,
-                    "endLine": 214,
+                    "startOffset": 16252,
+                    "endLine": 220,
                     "endColumn": 12,
-                    "endOffset": 16079
+                    "endOffset": 16380
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 213,
                         "startColumn": 4,
@@ -1543,14 +1564,14 @@
             },
             {
                 "to": {
-                    "startLine": 215,
+                    "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 16084,
+                    "startOffset": 16385,
                     "endColumn": 94,
-                    "endOffset": 16174
+                    "endOffset": 16475
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 215,
                         "startColumn": 4,
@@ -1562,14 +1583,14 @@
             },
             {
                 "to": {
-                    "startLine": 216,
+                    "startLine": 222,
                     "startColumn": 4,
-                    "startOffset": 16179,
+                    "startOffset": 16480,
                     "endColumn": 90,
-                    "endOffset": 16265
+                    "endOffset": 16566
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 216,
                         "startColumn": 4,
@@ -1581,14 +1602,14 @@
             },
             {
                 "to": {
-                    "startLine": 217,
+                    "startLine": 223,
                     "startColumn": 4,
-                    "startOffset": 16270,
+                    "startOffset": 16571,
                     "endColumn": 90,
-                    "endOffset": 16356
+                    "endOffset": 16657
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 217,
                         "startColumn": 4,
@@ -1600,14 +1621,14 @@
             },
             {
                 "to": {
-                    "startLine": 218,
+                    "startLine": 224,
                     "startColumn": 4,
-                    "startOffset": 16361,
+                    "startOffset": 16662,
                     "endColumn": 116,
-                    "endOffset": 16473
+                    "endOffset": 16774
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 218,
                         "startColumn": 4,
@@ -1619,15 +1640,15 @@
             },
             {
                 "to": {
-                    "startLine": 219,
+                    "startLine": 225,
                     "startColumn": 4,
-                    "startOffset": 16478,
-                    "endLine": 220,
+                    "startOffset": 16779,
+                    "endLine": 226,
                     "endColumn": 12,
-                    "endOffset": 16612
+                    "endOffset": 16913
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 219,
                         "startColumn": 4,
@@ -1640,15 +1661,15 @@
             },
             {
                 "to": {
-                    "startLine": 221,
+                    "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 16617,
-                    "endLine": 230,
+                    "startOffset": 16918,
+                    "endLine": 236,
                     "endColumn": 12,
-                    "endOffset": 17125
+                    "endOffset": 17426
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 221,
                         "startColumn": 4,
@@ -1661,15 +1682,15 @@
             },
             {
                 "to": {
-                    "startLine": 231,
+                    "startLine": 237,
                     "startColumn": 4,
-                    "startOffset": 17130,
-                    "endLine": 240,
+                    "startOffset": 17431,
+                    "endLine": 246,
                     "endColumn": 12,
-                    "endOffset": 17650
+                    "endOffset": 17951
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 231,
                         "startColumn": 4,
@@ -1682,15 +1703,15 @@
             },
             {
                 "to": {
-                    "startLine": 241,
+                    "startLine": 247,
                     "startColumn": 4,
-                    "startOffset": 17655,
-                    "endLine": 250,
+                    "startOffset": 17956,
+                    "endLine": 256,
                     "endColumn": 12,
-                    "endOffset": 18330
+                    "endOffset": 18631
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 241,
                         "startColumn": 4,
@@ -1703,14 +1724,14 @@
             },
             {
                 "to": {
-                    "startLine": 251,
+                    "startLine": 257,
                     "startColumn": 4,
-                    "startOffset": 18335,
+                    "startOffset": 18636,
                     "endColumn": 56,
-                    "endOffset": 18387
+                    "endOffset": 18688
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 251,
                         "startColumn": 4,
@@ -1722,20 +1743,41 @@
             },
             {
                 "to": {
-                    "startLine": 252,
+                    "startLine": 258,
                     "startColumn": 4,
-                    "startOffset": 18392,
+                    "startOffset": 18693,
                     "endColumn": 57,
-                    "endOffset": 18445
+                    "endOffset": 18746
                 },
                 "from": {
-                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 252,
                         "startColumn": 4,
                         "startOffset": 18392,
                         "endColumn": 57,
                         "endOffset": 18445
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 259,
+                    "startColumn": 4,
+                    "startOffset": 18751,
+                    "endLine": 261,
+                    "endColumn": 12,
+                    "endOffset": 18940
+                },
+                "from": {
+                    "file": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 244
                     }
                 }
             }

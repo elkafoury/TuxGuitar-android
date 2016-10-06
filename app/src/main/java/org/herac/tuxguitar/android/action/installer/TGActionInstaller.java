@@ -46,6 +46,7 @@ import org.herac.tuxguitar.android.action.impl.track.TGGoPreviousTrackAction;
 import org.herac.tuxguitar.android.action.impl.track.TGGoToTrackAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportPlayAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportStopAction;
+import org.herac.tuxguitar.android.action.impl.view.TGBluetoothAction;
 import org.herac.tuxguitar.android.action.impl.view.TGToggleTabKeyboardAction;
 import org.herac.tuxguitar.editor.action.TGActionBase;
 import org.herac.tuxguitar.editor.action.channel.TGAddChannelAction;
@@ -318,6 +319,7 @@ public class TGActionInstaller {
 		
 		//view actions
 		installAction(new TGToggleTabKeyboardAction(context));
+
 		
 		//browser actions
 		installAction(new TGBrowserCdRootAction(context));
@@ -345,6 +347,11 @@ public class TGActionInstaller {
 		installAction(new TGOpenDialogAction(context));
 		installAction(new TGOpenMenuAction(context));
 		installAction(new TGOpenFragmentAction(context));
+
+
+		installAction(new TGBluetoothAction(context)); // bluetooth
+
+
 	}
 	
 	public void installAction(TGActionBase action) {

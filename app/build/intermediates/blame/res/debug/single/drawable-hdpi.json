@@ -24,6 +24,10 @@
         "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/drawable-hdpi/ic_keyboard_arrow_up_white_24dp.png"
     },
     {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_bluetooth_24dp.png",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/drawable-hdpi/ic_bluetooth_24dp.png"
+    },
+    {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/drawable-hdpi/dynamic_mp.png",
         "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/drawable-hdpi/dynamic_mp.png"
     },

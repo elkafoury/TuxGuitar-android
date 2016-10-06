@@ -3,11 +3,14 @@ package org.herac.tuxguitar.player.plugin;
 import android.util.Log;
 
 import org.herac.tuxguitar.android.TuxGuitar;
+import org.herac.tuxguitar.android.activity.TGActivity;
 import org.herac.tuxguitar.graphics.control.TGNoteImpl;
 import org.herac.tuxguitar.util.TGContext;
 import org.herac.tuxguitar.util.plugin.TGPlugin;
 import org.herac.tuxguitar.util.plugin.TGPluginException;
 import org.herac.tuxguitar.song.models.*;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -78,6 +81,9 @@ public  class smartLight implements TGPlugin {
     // Serial.write(64);// reset SMARTLIGHT
     // Serial.write(B01000101);// command to trun led on
     // Serial.write(B01000100);// command to trun led off
+
+    private TGActivity activity;
+
     public smartLight(TGContext context) {
         Log.d("Smartlight construct",MODULE_ID);
         this.context = context;
@@ -85,23 +91,29 @@ public  class smartLight implements TGPlugin {
         this.appendListeners();
 
         //connect bt
-        serial=new bluetoothCommunicator();
+        if(serial==null){
+            serial=new bluetoothCommunicator(getActivity());
+        }
+
     }
+    public TGActivity getActivity() {
+        return activity;
+    }
+
+    public void setActivity(TGActivity activity) {
+        this.activity = activity;
+    }
+
     public void appendListeners() {
         Log.d("append Smrt listener",MODULE_ID);
         TGSmartlightEventListener listener = new TGSmartlightEventListener (this);
         TuxGuitar.getInstance(this.context).getEditorManager().addPluginRedrawListener(listener);
-
+        setActivity(TuxGuitar.getInstance(this.context).getActivity());
     }
-
-
-
 
     public byte getOctave(int fret,int string) {
         return octaves[fret][string];
     }
-
-
 
     public byte getNote(int fret,int string) {
         return Notes[fret][string];
@@ -124,7 +136,7 @@ public  class smartLight implements TGPlugin {
         }
     }
 
-    public void turnOffBeats ( List lastNotes  ) {
+    public void turnOffBeats ( List lastNotes  ) throws Exception {
 
         int fretIndex=-1,stringIndex=-1,smStringIndex=-1;
 
@@ -137,13 +149,14 @@ public  class smartLight implements TGPlugin {
             //el traste 0 es al aire - ahora lo ignoramos
             Log.d("turning off ", "string: " + stringIndex + " fret: " + fretIndex);
             //smartlight communications
-            if (serial != null && fretIndex!=-1) {
+            if (serial.getConnected() != null && fretIndex!=-1) {
                 //this.serial.writeData(GDPSerialCommunicator.NEW_LINE_ASCII);
-                System.out.println("OFF  String " + stringIndex + " fret: " + fretIndex );
+                Log.d("turning off ", "string: " + stringIndex + " fret: " + fretIndex);
                 this.serial.writeData(68);// command to trun led off
                 this.serial.writeData(getNote(fretIndex,smStringIndex ));// command to note
                 this.serial.writeData(getOctave(fretIndex,smStringIndex ));// command to octave
-                this.serial.flush();
+               // this.serial.flush();
+                this.serial.writeData(64);
                 Log.d("flushed OFF " ," off" );
 
             }
@@ -206,7 +219,7 @@ public  class smartLight implements TGPlugin {
 
 
 
-    private List lightBeats(TGBeat beat) {
+    private List lightBeats(TGBeat beat) throws IOException {
 
         if (beat == null){
             return null;
@@ -306,7 +319,7 @@ public  class smartLight implements TGPlugin {
     }
 
 
-    public void redraw(int type) {
+    public void redraw(int type) throws IOException {
 //        try {
 //            if( type == TGRedrawListener.NORMAL ){
 ////

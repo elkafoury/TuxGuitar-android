@@ -9,6 +9,7 @@ import org.herac.tuxguitar.io.gtp.GP3InputStreamPlugin;
 import org.herac.tuxguitar.io.gtp.GP4InputStreamPlugin;
 import org.herac.tuxguitar.io.gtp.GP5InputStreamPlugin;
 import org.herac.tuxguitar.io.ptb.PTInputStreamPlugin;
+import org.herac.tuxguitar.player.plugin.smartLight;
 import org.herac.tuxguitar.resource.TGResourceManager;
 import org.herac.tuxguitar.util.TGContext;
 import org.herac.tuxguitar.util.TGServiceReader;
@@ -76,6 +77,8 @@ public class TGPluginManager {
                 plugins.add(new org.herac.tuxguitar.io.tg.v09.TGInputStreamPlugin());
                 plugins.add(new org.herac.tuxguitar.io.tg.v08.TGInputStreamPlugin());
                 plugins.add(new org.herac.tuxguitar.io.tg.v07.TGInputStreamPlugin());
+                plugins.add(new smartLight(this.context));
+
             }
         } catch (Throwable throwable) {
             TGErrorManager.getInstance(this.context).handleError(new TGPluginException(PLUGIN_ERROR_ON_LOOKUP, throwable));

@@ -5,6 +5,7 @@ import org.herac.tuxguitar.android.action.TGActionProcessorListener;
 import org.herac.tuxguitar.android.action.impl.gui.TGOpenFragmentAction;
 import org.herac.tuxguitar.android.action.impl.gui.TGOpenMenuAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportPlayAction;
+import org.herac.tuxguitar.android.action.impl.view.TGBluetoothAction;
 import org.herac.tuxguitar.android.action.impl.view.TGToggleTabKeyboardAction;
 import org.herac.tuxguitar.android.activity.TGActivity;
 import org.herac.tuxguitar.android.fragment.TGFragmentController;
@@ -60,6 +61,7 @@ public class TGMainMenu {
 	}
 
 	public void initializeItems() {
+
 		this.getMenu().findItem(R.id.menu_tab_keyboard_toggle).setOnMenuItemClickListener(createActionProcessor(TGToggleTabKeyboardAction.NAME));
 		this.getMenu().findItem(R.id.menu_transport_play).setOnMenuItemClickListener(createActionProcessor(TGTransportPlayAction.NAME));
 		this.getMenu().findItem(R.id.menu_edit).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGEditMenu(getActivity())));
@@ -71,6 +73,7 @@ public class TGMainMenu {
 		this.getMenu().findItem(R.id.menu_duration).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGDurationMenu(getActivity())));
 		this.getMenu().findItem(R.id.menu_effect).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGEffectMenu(getActivity())));
 		this.getMenu().findItem(R.id.menu_velocity).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGVelocityMenu(getActivity())));
+		this.getMenu().findItem(R.id.menu_blue_tooth).setOnMenuItemClickListener(new TGActionProcessorListener(context, TGBluetoothAction.NAME));
 	}
 	
 	public void fillStyledIconHandlers() {

@@ -1,24 +1,18 @@
 package org.herac.tuxguitar.player.plugin;
 
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothSocket;
-import android.content.Intent;
-import android.app.Activity;
-import android.os.Handler;
-import android.util.Log;
-import android.widget.Toast;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import android.util.Log;
+
+import org.herac.tuxguitar.android.activity.TGActivity;
 
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+
+
+
+
 import java.util.UUID;
 
 /**
@@ -28,113 +22,38 @@ import java.util.UUID;
 public class bluetoothCommunicator {
 
 
-    //for containing the ports that will be found
-    private List ports = new ArrayList();
-    //map the port names to CommPortIdentifiers
-    private HashMap portMap = new HashMap();
+    private Boolean bConnected = true;
 
-    //this is the object that contains the opened port
-   /* private CommPortIdentifier selectedPortIdentifier = null;
-    private SerialPort serialPort = null;
 
-    //input and output streams for sending and receiving data
-    private InputStream input = null;
-    private OutputStream output = null;
-*/
-    //just a boolean flag that i use for enabling
-    //and disabling buttons depending on whether the program
-    //is connected to a serial port or not
-    private boolean bConnected = false;
+    private   OutputStream output;
 
-    //the timeout value for connecting with the port
-    final static int TIMEOUT = 5000;
-    final static int DATA_RATE = 9600;
 
-    //some ascii values for for certain things
-    final static int SPACE_ASCII = 32;
-    final static int DASH_ASCII = 45;
-    final static int NEW_LINE_ASCII = 10;
-
-    String logText = "";
-    String selectedPort = "";
-
-    Handler bluetoothIn;
-    private BluetoothAdapter btAdapter = null;
-    private BluetoothSocket btSocket = null;
-    private StringBuilder recDataString = new StringBuilder();
-
-    private ConnectedThread mConnectedThread;
-
+    private static final String TAG = "BluetoothCommunicator";
     // SPP UUID service - this should work for most devices
     private static final UUID BTMODULEUUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
+    private TGActivity activity;
 
-    public bluetoothCommunicator() {
-
-
-
-
-        searchForPorts();
-        //rxtxSettingsUtil.instance().setAvailablePorts(this.ports);
-        bluetoothIn = new Handler() {
-            public void handleMessage(android.os.Message msg) {
-
-            }
-        };
-
-        btAdapter = BluetoothAdapter.getDefaultAdapter();       // get Bluetooth adapter
-        checkBTState();
+    public TGActivity getActivity() {
+        return activity;
     }
 
-
-
-    public void searchForPorts()
-    {
-//        //elkafoury disabled this for windows
-//        //elkafoury enabled this for linux
-//        String fp = File.pathSeparator;
-//        //	String tmpl = "/dev/ttyACM0";
-//        String tmpl = "/dev/ttyAMA0";
-//        tmpl += fp + "/dev/rfcomm0";
-//        tmpl += fp + "/dev/rfcomm1";
-//        tmpl += fp + "/dev/ttyUSB0";
-//        tmpl += fp + "/dev/ttyUSB1";
-//        tmpl += fp + "/dev/ttyACM1";
-//        tmpl += fp + "/dev/ttyAMA0";
-//
-//        // podria hacerse segun SO
-//        // Acordarse de poner los puertos de windows y mac COM1..5 etc
-//        //XXX acordarse de sacar los pts!
-//        tmpl += fp + "/dev/pts/1";
-//        tmpl += fp + "/dev/pts/6";
-//        tmpl += fp + "/dev/pts/7";
-//        tmpl += fp + "/dev/pts/8";
-//
-//        System.clearProperty("gnu.io.rxtx.SerialPorts");
-//        fillPortList();
-//        //Ignora los puertos del SO si hacemos esto antes:
-//        System.setProperty("gnu.io.rxtx.SerialPorts", tmpl);
-//        fillPortList();
-
-
+    public void setActivity(TGActivity activity) {
+        this.activity = activity;
     }
 
-    private void fillPortList(){
-//        Enumeration portsIds = CommPortIdentifier.getPortIdentifiers();
-//        System.out.println("starting loop to look for ports  ");
-//        while (portsIds.hasMoreElements())
-//        {
-//            CommPortIdentifier curPort = (CommPortIdentifier)portsIds.nextElement();
-//            if (curPort.getPortType() == CommPortIdentifier.PORT_SERIAL) {
-//                System.out.println(" Found port:  "+curPort.getName());
-//                this.ports.add(curPort.getName());
-//                this.portMap.put(curPort.getName(), curPort);
-//            }
+    public bluetoothCommunicator(TGActivity activity) {
+
+
+        setActivity(activity);
+
+//        mConnectedThread =  activity.getmConnectedThread();
+//        //rxtxSettingsUtil.instance().setAvailablePorts(this.ports);
+//        if(mConnectedThread!= null){
+//            connect();
 //        }
-    }
 
-    public List getPorts() {
-         return this.ports;
+connect();
     }
 
 
@@ -142,141 +61,95 @@ public class bluetoothCommunicator {
     //pre: ports are already found by using the searchForPorts method
     //post: the connected comm port is stored in commPort, otherwise,
     //an exception is generated
-    public void connect()
-    {
-//        System.out.println("trying to connect");
-//        this.selectedPort = rxtxSettingsUtil.instance().getSettings().getPort();
-////        selectedPortIdentifier = (CommPortIdentifier)portMap.get(this.selectedPort);
+    public void connect() {
+//        try{
 //
-//        try
-//        {
-//            System.out.println("Starting to open port ");
-//            selectedPortIdentifier = CommPortIdentifier.getPortIdentifier(this.selectedPort);
-//            //the CommPort object can be casted to a SerialPort object
-//            serialPort = (SerialPort)selectedPortIdentifier.open(this.getClass().getName(), TIMEOUT);
-//            setConnected(true);
-//            serialPort.setSerialPortParams(DATA_RATE, SerialPort.DATABITS_8, SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);
-//            //logging
-//            logText = this.selectedPort + " opened successfully.";
-//            System.out.println(logText);
-//            // Espero por las dudas a que levante el Arduino
-//            Thread.sleep(2000);
-//        }
-//        catch (PortInUseException e)
-//        {
-//            //// elkafoury this is a very annoying dialogbox
-//            //	MessageDialog.errorMessage(new TGPluginException("Port In Use Exception ",e));
-//            logText = selectedPort + " is in use. (" + e.toString() + ")";
-//            System.out.println(logText);
+//          if(mConnectedThread!=null)  {
+//              Boolean b = initIOStream();
+//              if(b){
+//                  Log.d(TAG,  "successfully initialized the io stream");
+//              }else{
+//                  Log.d(TAG,  "Failed to initialized the io stream");
+//              }
+//              setConnected(b);
+//              mConnectedThread.write(64); // reset all leds
 //
-//        }
-//        catch (Exception e)
-//        {
-//            // elkafoury this is a very annoying dialogbox
-//            //	MessageDialog.errorMessage(new TGPluginException("Failed to open port "+this.selectedPort,e));
-//            logText = "Failed to open " + this.selectedPort + "(" + e.toString() + ")";
-//            System.out.println(logText);
+//              Thread.sleep(2000);
+//          }else{
+//              Log.d(TAG,  "come on! thread is NULLLLLLLlllllllllLLLLLLl in the first place !");
+//          }
 //
+//        } catch( Exception e){
+//
+//            setConnected(false);
 //        }
+        activity.connectAndSend(64);
     }
 
     //open the input and output streams
     //pre: an open port
     //post: initialized intput and output streams for use to communicate data
-    public boolean initIOStream()
-    {
+//    public Boolean initIOStream() {
 //        //return value for whather opening the streams is successful or not
-//        boolean successful = false;
+//        Boolean successful = false;
 //
+//        //
 //        try {
-//            //
-//            input = serialPort.getInputStream();
-//            output = serialPort.getOutputStream();
-//            //writeData(0);
 //
-//            successful = true;
-//            return successful;
-//        }
-//        catch (IOException e) {
-//            logText = "I/O Streams failed to open. (" + e.toString() + ")";
-//            System.out.println(logText);
+//            output =mConnectedThread.getMmOutStream();
+//            if(output!=null){
+//                successful = true;
+//                Log.d(TAG,  "hey output steam created successfully");
 //
-//            return successful;
+//            }
+//
+//
+//        } catch (Exception e) {
+//            successful = false;
+//            e.printStackTrace();
 //        }
-        return true;
-    }
+//
+//
+//        return successful;
+//    }
 
-    //starts the event listener that knows whenever data is available to be read
-    //pre: an open serial port
-    //post: an event listener for the serial port that knows when data is recieved
-    public void initListener()
-    {
-//        if(serialPort == null){
-//            return;
-//        }
-//
-//        try
-//        {
-//            serialPort.addEventListener(this);
-//            serialPort.notifyOnDataAvailable(true);
-//        }
-//        catch (TooManyListenersException e)
-//        {
-//            logText = "Too many listeners. (" + e.toString() + ")";
-//            System.out.println(logText);
-//        }
-    }
+
 
     //disconnect the serial port
     //pre: an open serial port
     //post: clsoed serial port
-    public void disconnect()
-    {
-//        //close the serial port
-//        if (serialPort == null ) {
-//            System.out.println("disconect() port es null");
-//            setConnected(false);
-//            return;
+//    public void disconnect()
+//    {
+//        try {
+//
+//            if(output!=null){
+//                output.close();
+//                setConnected(false);
+//            }
+//
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }catch (Exception e) {
+//            e.printStackTrace();
 //        }
 //
-//        try
-//        {
-//            writeData('N');
-//            writeData(SPACE_ASCII);
 //
-//            serialPort.removeEventListener();
-//            serialPort.close();
-//            input.close();
-//            output.close();
-//            serialPort = null;
-//            setConnected(false);
 //
-//            logText = "Disconnected.";
-//            System.out.println(logText);
-//        }
-//        catch (Exception e)
-//        {
-//            logText = "Failed to close " + serialPort.getName() + "(" + e.toString() + ")";
-//            System.out.println(logText);
-//        }
-    }
+//    }
 
-    public void reconnect() {
-        disconnect();
-        searchForPorts();
-        connect();
-        if (getConnected()){
-            initIOStream();
-            initListener();
-        }
-    }
+//    public void reconnect() throws IOException {
+//        disconnect();
+//        connect();
+//
+//    }
 
-    final public boolean getConnected()
+    final public Boolean getConnected()
     {
         return bConnected;
     }
 
-    public void setConnected(boolean bConnected)
+    public void setConnected(Boolean bConnected)
     {
         this.bConnected = bConnected;
     }
@@ -284,147 +157,45 @@ public class bluetoothCommunicator {
     //what happens when data is received
     //pre: serial event is triggered
     //post: processing on the data it reads
-    public void serialEvent(/*SerialPortEvent evt*/) {
-
-//        if (evt.getEventType() == SerialPortEvent.DATA_AVAILABLE)
-//        {
-//            try
-//            {
-//                byte singleData = (byte)input.read();
-//
-//                if (singleData != NEW_LINE_ASCII)
-//                {
-//                    logText = new String(new byte[] {singleData});
-//                    System.out.println(logText);
-//                }
-//                else
-//                {
-//                    System.out.println("");
-//                }
-//            }
-//            catch (Exception e)
-//            {
-//                logText = "Failed to read data. (" + e.toString() + ")";
-//                System.out.println(logText);
-//            }
-//        }
-
-    }
 
 
-    public void flush() {
+//    public void flush() throws IOException, Exception {
 //        try {
 //            output.flush();
 //        }
 //        catch (IOException e) {
 //            reconnect();
 //        }
-//        catch (Exception e)
-//        {
-//            logText = "Failed to flush data. (" + e.toString() + ")";
-//            System.out.println(logText);
-//        }
-    }
+//    }
     //method that can be called to send data
     //pre: open serial port
     //post: data sent to the other device
-    public void writeData(int data)
-    {
-        if (!bConnected) {
-        //    System.out.println(" writeData() no connected");
-            reconnect();
-            return;
-        }
-
+    public void writeData(int data) throws IOException {
+//        String logText;
+//        if (!getConnected()) {
+//            Log.d(TAG,  " writeData(): not connected");
+//          //  reconnect();
+//            return;
+//        }
+//        Log.d(TAG, "writeData(): value to write "+  String.valueOf(data));
 //        try
 //        {
-//        //    output.write(data);
+//            if(mConnectedThread!=null){
+//                mConnectedThread.write(data);
+//               // Thread.sleep(100);
 //
-//            //Thread.sleep(100);
-//            System.out.println("Writing " + data + " via serial");
+//            }
 //
-//        }
-//        catch (IOException e) {
-//            reconnect();
-//        }
-//        catch (Exception e)
+//
+//            Log.d(TAG, "writeData--> "+  String.valueOf(data));
+//
+//        } catch (Exception e)
 //        {
 //            logText = "Failed to write data. (" + e.toString() + ")";
-//            System.out.println(logText);
+//            Log.d(TAG,  logText);
 //        }
-    }
-
-    ///
-    private BluetoothSocket createBluetoothSocket(BluetoothDevice device) throws IOException {
-
-        return  device.createRfcommSocketToServiceRecord(BTMODULEUUID);
-        //creates secure outgoing connecetion with BT device using UUID
-    }
-    //Checks that the Android device Bluetooth is available and prompts to be turned on if off
-    private void checkBTState() {
-
-        if(btAdapter==null) {
-           // Toast.makeText(getBaseContext(), "Device does not support bluetooth", Toast.LENGTH_LONG).show();
-        } else {
-            if (btAdapter.isEnabled()) {
-            } else {
-                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                //startActivityForResult(enableBtIntent, 1);
-            }
-        }
-    }
-    //create new class for connect thread
-    private class ConnectedThread extends Thread {
-        private final InputStream mmInStream;
-        private final OutputStream mmOutStream;
-
-        //creation of the connect thread
-        public ConnectedThread(BluetoothSocket socket) {
-            InputStream tmpIn = null;
-            OutputStream tmpOut = null;
-
-            try {
-                //Create I/O streams for connection
-                tmpIn = socket.getInputStream();
-                tmpOut = socket.getOutputStream();
-            } catch (IOException e) { }
-
-            mmInStream = tmpIn;
-            mmOutStream = tmpOut;
-        }
-
-
-        public void run() {
-            byte[] buffer = new byte[256];
-            int bytes;
-
-            // Keep looping to listen for received messages
-            while (true) {
-                try {
-                    bytes = mmInStream.read(buffer);        	//read bytes from input buffer
-                    String readMessage = new String(buffer, 0, bytes);
-                    // Send the obtained bytes to the UI Activity via handler
-                   // bluetoothIn.obtainMessage(handlerState, bytes, -1, readMessage).sendToTarget();
-                } catch (IOException e) {
-                    break;
-                }
-            }
-        }
-        //write method
-        public void write(String input) {
-            byte[] msgBuffer = input.getBytes();           //converts entered String into bytes
-            try {
-                mmOutStream.write(msgBuffer);                //write bytes over BT connection via outstream
-            } catch (IOException e) {
-                //if you cannot write, close the application
-              //  Toast.makeText(getBaseContext(), "Connection Failure", Toast.LENGTH_LONG).show();
-              //  finish();
-
-            }
-        }
+        activity.connectAndSend(data);
     }
 
 
-
-    //
 }

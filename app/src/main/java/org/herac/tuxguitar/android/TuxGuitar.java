@@ -29,12 +29,20 @@ public class TuxGuitar {
 	
 	private TGContext context;
 	private TGLock lock;
-	
+	private TGActivity activity;
 	private TuxGuitar(TGContext context) {
 		this.context = context;
 		this.lock = new TGLock();
 	}
-	
+
+	public TGActivity getActivity() {
+		return activity;
+	}
+
+	public void setActivity(TGActivity activity) {
+		this.activity = activity;
+	}
+
 	public void initialize(TGActivity activity) {
 		TGSynchronizer.getInstance(this.context).setController(new TGSynchronizerControllerImpl(this.context));
 		TGErrorManager.getInstance(this.context).addErrorHandler(new TGErrorHandlerImpl(activity));
@@ -44,6 +52,8 @@ public class TuxGuitar {
 		TGVarAdapter.initialize(this.context);
 		TGPropertiesAdapter.initialize(this.context, activity);
 		TGTransportAdapter.getInstance(this.context).initialize();
+		setActivity(activity);
+
 	}
 	
 	public void destroy() {

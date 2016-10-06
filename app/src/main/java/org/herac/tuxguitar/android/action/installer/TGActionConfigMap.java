@@ -45,6 +45,7 @@ import org.herac.tuxguitar.android.action.impl.track.TGGoPreviousTrackAction;
 import org.herac.tuxguitar.android.action.impl.track.TGGoToTrackAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportPlayAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportStopAction;
+import org.herac.tuxguitar.android.action.impl.view.TGBluetoothAction;
 import org.herac.tuxguitar.android.action.impl.view.TGToggleTabKeyboardAction;
 import org.herac.tuxguitar.android.action.listener.cache.TGUpdateController;
 import org.herac.tuxguitar.android.action.listener.cache.controller.TGUpdateAddedMeasureController;
@@ -363,7 +364,9 @@ public class TGActionConfigMap extends TGActionMap<TGActionConfig> {
 		
 		//view actions
 		this.map(TGToggleTabKeyboardAction.NAME, LOCKABLE | SYNC_THREAD, UPDATE_ITEMS_CTL);
-		
+		this.map(TGBluetoothAction.NAME, LOCKABLE | SYNC_THREAD, null);
+		//this.map(TGFinishAction.NAME, LOCKABLE | SYNC_THREAD, null);
+
 		//browser actions
 		this.map(TGBrowserCdRootAction.NAME, LOCKABLE, UPDATE_ITEMS_CTL);
 		this.map(TGBrowserCdUpAction.NAME, LOCKABLE, UPDATE_ITEMS_CTL);

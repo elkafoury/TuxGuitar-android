@@ -1,7 +1,7 @@
 [
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_alert_dialog_material.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_browser.xml",
@@ -13,7 +13,7 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_dialog_title_material.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_main.xml",
@@ -21,23 +21,39 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_list_menu_item_layout.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_separator.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_layout_snackbar_include.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/select_dialog_item_material.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_activity_chooser_view.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_browser_collections_item.xml",
@@ -53,15 +69,15 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_mode_bar.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_template_part_chronometer.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_screen_content_include.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_repeat_alternative.xml",
@@ -70,6 +86,10 @@
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_browser_collections_dialog.xml",
         "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_browser_collections_dialog.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_drawer_group.xml",
@@ -81,15 +101,15 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_template_media.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_select_dialog_material.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_list_menu_item_checkbox.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/activity_tg.xml",
@@ -101,19 +121,19 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_template_lines.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_lines.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_template_big_media_narrow.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_screen_simple.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_activity_chooser_view_list_item.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_tempo_dialog.xml",
@@ -125,7 +145,7 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_expanded_menu_layout.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_tremolo_picking_dialog.xml",
@@ -133,7 +153,11 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_media_action.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/content_device_list.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/content_device_list.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_tremolo_bar_dialog.xml",
@@ -141,11 +165,15 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_media_cancel_action.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/device_name.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/device_name.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_list_menu_item_radio.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_track_name_dialog.xml",
@@ -153,23 +181,35 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_screen_toolbar.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_layout_tab_text.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/select_dialog_multichoice_material.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_menu_layout.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_menu_layout.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_list_menu_item_icon.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_text_input_password_icon.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_popup_menu_header_item_layout.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_main_drawer_text_item.xml",
@@ -181,15 +221,23 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_bar_up_container.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_layout_snackbar.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_template_part_time.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_layout_tab_icon.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/notification_template_big_media.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_track_channel_dialog.xml",
@@ -200,20 +248,32 @@
         "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_bend_dialog.xml"
     },
     {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_mode_close_item_material.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_main_drawer.xml",
         "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_main_drawer.xml"
     },
     {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/device_list.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/device_list.xml"
+    },
+    {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_bar_title_item.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_measure_remove_dialog.xml",
@@ -229,7 +289,7 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_search_view.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_measure_clean_dialog.xml",
@@ -241,7 +301,7 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_popup_menu_item_layout.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_text_dialog.xml",
@@ -249,7 +309,7 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/select_dialog_singlechoice_material.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_stroke_dialog.xml",
@@ -258,6 +318,10 @@
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_browser_settings_fs_dialog.xml",
         "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_browser_settings_fs_dialog.xml"
+    },
+    {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_menu.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_grace_dialog.xml",
@@ -273,27 +337,27 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_trill_dialog.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_trill_dialog.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_channel_list.xml",
         "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_channel_list.xml"
     },
     {
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_trill_dialog.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_trill_dialog.xml"
+    },
+    {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_repeat_close.xml",
         "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_repeat_close.xml"
     },
     {
-        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_harmonic_dialog.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_harmonic_dialog.xml"
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_harmonic_dialog.xml",
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/src/main/res/layout/view_harmonic_dialog.xml"
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/view_main_drawer_check_item.xml",
@@ -305,6 +369,6 @@
     },
     {
         "merged": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "source": "/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
     }
 ]

@@ -1,5 +1,7 @@
 package org.herac.tuxguitar.android.view.tablature;
 
+import android.util.Log;
+
 import org.herac.tuxguitar.editor.event.TGRedrawEvent;
 import org.herac.tuxguitar.editor.event.TGUpdateEvent;
 import org.herac.tuxguitar.editor.event.TGUpdateMeasureEvent;
@@ -43,6 +45,7 @@ public class TGSongViewEventListener implements TGEventListener {
 	
 	public void processEvent(TGEvent event) {
 		if( TGRedrawEvent.EVENT_TYPE.equals(event.getEventType()) ) {
+			Log.d("TGSongViewEventListener",TGRedrawEvent.EVENT_TYPE );
 			this.processRedrawEvent(event);
 		} 
 		else if( TGUpdateEvent.EVENT_TYPE.equals(event.getEventType()) ) {

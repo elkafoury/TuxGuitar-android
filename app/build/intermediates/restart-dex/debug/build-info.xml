@@ -4,33 +4,47 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="7236248890374"
+    timestamp="30455929039483"
     token="1170093981807279934"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="10553" />
+        duration="3468" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="1212" />
     <task
         name="instant-run-transform"
-        duration="5827" />
+        duration="135" />
     <task
         name="verifier"
-        duration="880" />
+        duration="17" />
 
     <artifact
-        location="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="7236248890374"
+        timestamp="169539353836"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="29970763842928"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/builds/debug/29970763842928/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="30455929039483"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

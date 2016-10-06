@@ -43,7 +43,7 @@ public class TGPluginProperties {
 	}
 	
 	public String createEnabledPropertyKey(String moduleId){
-		Log.d("jiiiiii","elkafoury");
+		//Log.d("jiiiiii","elkafoury");
 		return (moduleId + ENABLED_PROPERTY_SUFFIX);
 	}
 	

@@ -2,7 +2,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="org.herac.tuxguitar.android.TGActivity" >
-
+    <item
+        android:id="@+id/menu_blue_tooth"
+        android:icon="@drawable/ic_bluetooth_24dp"
+        android:title="@string/menu_tab_blue_tooth"
+        app:showAsAction="always"/>
     <item
         android:id="@+id/menu_tab_keyboard_toggle"
         android:icon="@drawable/ic_mode_edit_white_24dp"

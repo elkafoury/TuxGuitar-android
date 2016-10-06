@@ -29,7 +29,7 @@ import org.herac.tuxguitar.song.models.effects.TGEffectBend.BendPoint;
 import org.herac.tuxguitar.song.models.effects.TGEffectHarmonic;
 import org.herac.tuxguitar.song.models.effects.TGEffectTremoloBar;
 import org.herac.tuxguitar.song.models.effects.TGEffectTremoloBar.TremoloBarPoint;
-
+import android.util.Log;
 /**
  * @author julian
  * 

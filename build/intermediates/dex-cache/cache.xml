@@ -3,48 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.4.0/jars/classes.jar"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="d463d8eec1e6c1feef2cec6675ccb47e37c12ee1">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.4.0_dafbbfbe0e0b773241043080ba48e52b127b6b8d/classes.dex" />
+        sha1="4e6470fe5081bd76bb727ea9d0d9de373ac5940b">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-gridlayout-v7-24.2.1_a7f0d738e2b7c9e99930f861fefaa989f54bace5/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/24.1.1/jars/classes.jar"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="8a5380ddd58f4f8946ddade4c64dd77de4a836d5">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-gridlayout-v7-24.1.1_7235b4d5520b7d01d572679a50da09fd5909efb1/classes.dex" />
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_aa8d3c8b5fc2ff3e2973b9572be443bd864a302f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.4.0/jars/classes.jar"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="147edbec6bcea71fd675ecc63cae3319637ec2b4">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.4.0_635e1012b85f91813b0ccd567351f52f81f2b3fa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mohamedelkafouri/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_aeb31a99f3bde575e12b6288e7ece3de860ca030/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_aef7b971939d040edb940f27dc41793a70c6ea34/classes.dex" />
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_94b53410792919e6b1ec4c164b2d69137f3b731e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,12 +48,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.4.0_9d23faa57734c0b7970d955a14f9acdd9505886a/classes.dex" />
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_f07ca16716fd31c953b269bbe517d01d3ace7afc/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,21 +75,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_41e796039b09b327fc32cfbb85d498d365ef2db0/classes.dex" />
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_5a85e254b9eea887ba1cb381e335d070f3938d09/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="f62e763609f65e47dc6c498760a4accf02776788">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_98216c8efa2d56d46c22f2ced3348f33de295af9/classes.dex" />
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_dadd6b78b49e7874f4deac03f782996181dfff34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_d77d08aa077ecae33ea985d4c03b7345f1357a7d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -115,17 +106,125 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="b2ecc40c7bd44f89799dfe966b18162637d6865e">
+        sha1="a0063bc42238c2dea1a53f46af5bee746851dc01">
         <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_96acecb6d34bb6e6b7934b28658281b143e0b1c0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_c5749b4361ea79295eb5c231229ade882993af5a/classes.dex" />
+        sha1="d463d8eec1e6c1feef2cec6675ccb47e37c12ee1">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.4.0_dafbbfbe0e0b773241043080ba48e52b127b6b8d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_6de684c2967a0b1bb69fc463e9b069d0ca2c272e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="147edbec6bcea71fd675ecc63cae3319637ec2b4">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.4.0_635e1012b85f91813b0ccd567351f52f81f2b3fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_bb4f8a2e1e83496533be5995effc7cff3c69477b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_68a5fca38a0174e1aae15c6ddb56a6822904f25a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_00ed5284b58e525b447ce85b7e5607406ee62406/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_230eb3cae220fdc8d0106f3e63c51568a0a1a588/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_85261987ee31957017525146ffca2457cb906748/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.4.0_9d23faa57734c0b7970d955a14f9acdd9505886a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_34b1155dfc35aa87930aa0d7b78fc708989ffd83/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_8c81b2790407eecfedc1e37ee20b32bb627856b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_29423b190c163177bf814d469c7be9edda5ad9d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_f48efc2617b18b12856a12fa21bea730ae241b01/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -133,17 +232,17 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="ff58ffad91e1bc369183aef30b491d30150e9fc8">
+        sha1="7494212b17cbaff35c27ea702121d90a2ea2b4ab">
         <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6ad8125daf36c62a4c0876eb9a1d0ae9a87fcd97/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jar="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
-        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_0373b35422ca5c7a18681d0e4643150e3aaea2a0/classes.dex" />
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/mohamedelkafouri/Desktop/TuxGuitar-android-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_49015195f249842a12e01f5fbd74535c35e65f0e/classes.dex" />
     </item>
 
 </items>
