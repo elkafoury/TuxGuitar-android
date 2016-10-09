@@ -39,7 +39,7 @@ public class TGTrackMenu extends TGContextMenuBase {
 		TGCaret caret = TGSongViewController.getInstance(context).getCaret();
 		TGTrack track = caret.getTrack();
 		boolean running = TuxGuitar.getInstance(context).getPlayer().isRunning();
-		
+
 		this.initializeItem(menu, R.id.menu_track_add, this.createActionProcessor(TGAddNewTrackAction.NAME), !running);
 		this.initializeItem(menu, R.id.menu_track_remove, this.createActionProcessor(TGRemoveTrackAction.NAME), !running);
 		this.initializeItem(menu, R.id.menu_track_clone, this.createActionProcessor(TGCloneTrackAction.NAME), !running);

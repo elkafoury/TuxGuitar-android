@@ -14,6 +14,7 @@ import org.herac.tuxguitar.song.models.TGTrack;
 
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.CheckedTextView;
 
 public class TGMainDrawerTrackListAdapter extends TGMainDrawerListAdapter {
@@ -45,14 +46,22 @@ public class TGMainDrawerTrackListAdapter extends TGMainDrawerListAdapter {
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		TGMainDrawerTrackListItem item = (TGMainDrawerTrackListItem) this.getItem(position);
-		
 		View view = (convertView != null ? convertView : getLayoutInflater().inflate(R.layout.view_main_drawer_check_item, parent, false));
 		view.setOnClickListener(getMainDrawer().getActionHandler().createGoToTrackAction(item.getTrack()));
 		
 		CheckedTextView checkedTextView = (CheckedTextView) view.findViewById(R.id.main_drawer_check_item);
 		checkedTextView.setText(item.getLabel());
 		checkedTextView.setChecked(Boolean.TRUE.equals(item.getSelected()));
-		
+		//ME check if track is solo and check or uncheck the solo checkbox on the main TGActivity
+		if(Boolean.TRUE.equals(item.getSelected())){
+			CheckBox cb = (CheckBox) this.getMainDrawer().findActivity().findViewById(R.id.tab_tb_check_change_solo);
+			if (item.getTrack().isSolo() && cb !=null) {
+				cb.setChecked(true);
+			} else {
+				cb.setChecked(false);
+			}
+}
+
 		return view;
 	}
 	

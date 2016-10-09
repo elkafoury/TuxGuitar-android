@@ -121,6 +121,52 @@
     <style name="TabKeyBoardImageButtonDown" parent="TabKeyBoardImageButton">
         <item name="android:src">@drawable/ic_keyboard_arrow_down_white_24dp</item>
     </style>
+    <!-- ========================================================= -->
+     <!-- ==== TAB TOOLBAR ======================================= --> 
+    <!-- ========================================================= -->  
+    <style name="TabToolbar"> 
+        <item name="android:background">@color/dark</item> 
+    </style>
+      <style name="TabToolbarButton"> 
+    <item name="android:typeface">normal</item> 
+    <item name="android:textStyle">normal</item> 
+    <item name="android:textSize">14sp</item> 
+    <item name="android:textColor">@color/color_text_light</item>  
+    <item name="android:layout_width">75dp</item> 
+    <item name="android:layout_height">50dp</item> 
+    <item name="android:padding">0sp</item> </style>
+      <style name="TabToolbarImageButton"> 
+    <item name="android:layout_width">36dp</item> 
+    <item name="android:layout_height">36dp</item> 
+    <item name="android:padding">0sp</item> 
+    </style>
+      <style name="TabToolbarImageButtonInsert" parent="TabToolbarImageButton">
+         <item name="android:src">@drawable/ic_keyboard_arrow_right_white_24dp</item> 
+    </style>  
+    <style name="TabToolbarImageButtonDelete" parent="TabToolbarImageButton"> 
+        <item name="android:src">@drawable/ic_keyboard_arrow_left_white_24dp</item> 
+    </style>  
+    <style name="TabToolbarImageButtonDuration" parent="TabToolbarImageButton"> 
+        <item name="android:src">@drawable/ic_music_note_white_24dp</item> 
+    </style>  
+    <style name="TabToolbarImageButtonDurationIncrement" parent="TabToolbarImageButton"> 
+        <item name="android:src">@drawable/ic_keyboard_arrow_up_white_24dp</item> 
+    </style>
+      <style name="TabToolbarImageButtonDurationDecrement" parent="TabToolbarImageButton"> 
+    <item name="android:src">@drawable/ic_keyboard_arrow_down_white_24dp</item> 
+    </style>  
+    <style name="TabToolbarImageButtonRight" parent="TabToolbarImageButton"> 
+        <item name="android:src">@drawable/ic_keyboard_arrow_right_white_24dp</item> 
+    </style>  
+    <style name="TabToolbarImageButtonLeft" parent="TabToolbarImageButton"> 
+        <item name="android:src">@drawable/ic_keyboard_arrow_left_white_24dp</item>
+     </style>  
+    <style name="TabToolbarImageButtonUp" parent="TabToolbarImageButton"> 
+        <item name="android:src">@drawable/ic_keyboard_arrow_up_white_24dp</item> 
+    </style>
+      <style name="TabToolbarImageButtonDown" parent="TabToolbarImageButton"> 
+    <item name="android:src">@drawable/ic_keyboard_arrow_down_white_24dp</item> 
+    </style> 
 
     <!-- ========================================================= -->
     <!-- ==== DRAWER ============================================= -->

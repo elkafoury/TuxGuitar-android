@@ -233,8 +233,19 @@ public class TGTrackManager {
 	}
 	
 	public void changeSolo(TGTrack track,boolean solo){
+
+		// set others solo false
+		Iterator<TGTrack> it = track.getSong().getTracks();
+		while( it.hasNext() ){
+			TGTrack otherTrack = it.next();
+			//getTrackManager().moveOutOfBoundsBeatsToNewMeasure(track, start);
+			otherTrack.setSolo(false);
+		}
+
 		track.setSolo(solo);
 		track.setMute(track.isSolo() ? false : track.isMute());
+
+
 	}
 	
 	public void changeMute(TGTrack track,boolean mute){

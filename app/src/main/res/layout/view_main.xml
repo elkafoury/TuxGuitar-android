@@ -8,6 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true" >
+        <include layout="@layout/view_tab_toolbar" />
     </FrameLayout>
 
     <FrameLayout
@@ -17,6 +18,7 @@
         android:layout_alignParentBottom="true" >
 
         <include layout="@layout/view_tab_keyboard" />
+
     </FrameLayout>
 
     <FrameLayout
