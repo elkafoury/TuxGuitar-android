@@ -73,7 +73,8 @@ public class TGMainMenu {
 		this.getMenu().findItem(R.id.menu_duration).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGDurationMenu(getActivity())));
 		this.getMenu().findItem(R.id.menu_effect).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGEffectMenu(getActivity())));
 		this.getMenu().findItem(R.id.menu_velocity).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGVelocityMenu(getActivity())));
-		this.getMenu().findItem(R.id.menu_blue_tooth).setOnMenuItemClickListener(new TGActionProcessorListener(context, TGBluetoothAction.NAME));
+		//ME we arent going to use this for now
+		//this.getMenu().findItem(R.id.menu_blue_tooth).setOnMenuItemClickListener(new TGActionProcessorListener(context, TGBluetoothAction.NAME));
 	}
 	
 	public void fillStyledIconHandlers() {

@@ -8,12 +8,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Select btSerial device from paired devices:"
+        android:text="Select HC-06 Serial device from paired devices:"
         android:visibility="gone"
         android:background="#666"
         android:textColor="#fff"
         android:paddingLeft="5dp"
         />
+
+
+
     <ListView android:id="@+id/paired_devices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +34,7 @@
         android:id="@+id/infoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="If no devices are listed please pair your device in Android settings"
+        android:text="If no devices are listed, please pair your device in Android settings."
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
@@ -40,5 +43,13 @@
         android:gravity="center">
 
     </LinearLayout>
+    <Button
+        android:id="@+id/back_tg_activity"
+        android:text="Start"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/TabKeyBoardButton"
+        />
 
 </LinearLayout>

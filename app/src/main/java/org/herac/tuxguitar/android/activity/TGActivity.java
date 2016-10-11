@@ -65,7 +65,7 @@ public class TGActivity extends AppCompatActivity {
 	private static final UUID BTMODULEUUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
 	// String for MAC address
-	private static String address;
+	private static String address=null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -90,18 +90,26 @@ public class TGActivity extends AppCompatActivity {
 		checkBTState();
 
 
-
-
 	}
 	
 	@Override
 	protected void onDestroy() {
 		Log.d(TAG, "ondestroy");
 		super.onDestroy();
-		
+		connectAndSend(64);
 		this.destroyTuxGuitar();
 		this.detachInstance();
 		this.destroyed = true;
+		address=null;
+				try {
+			//Don't leave Bluetooth sockets open when leaving activity
+			if (btSocket != null) {
+				btSocket.close();
+			}
+		} catch (IOException e2) {
+			//insert code to deal with this
+		}
+
 	}
 	
 	@Override
@@ -109,11 +117,11 @@ public class TGActivity extends AppCompatActivity {
 		super.onPostCreate(savedInstanceState);
 		Log.d(TAG, "onPostCreate");
 		//bluetooth
-
-		if(address==null){
-			Intent dIntent = new Intent(this,DeviceListActivity.class);
+		if(address==null || address.equalsIgnoreCase("none")){
+			Intent dIntent = new Intent(TGActivity.this,DeviceListActivity.class);
 			startActivity(dIntent);
 		}
+
 		this.connectPlugins();
 		this.loadDefaultSong();
 		this.drawerManager.syncState();
@@ -136,11 +144,17 @@ public class TGActivity extends AppCompatActivity {
 //		}
 
 		//connectAndSend();
+
 	}
 	@Override
 	public void onResume() {
  		super.onResume();
 		Log.d(TAG, "onResume");
+		Intent intent = getIntent();
+
+		//Get the MAC address from the DeviceListActivty via EXTRA
+		address = intent.getStringExtra(DeviceListActivity.EXTRA_DEVICE_ADDRESS);
+
 		connectAndSend(64);
 	}
 	@Override
@@ -281,15 +295,8 @@ public class TGActivity extends AppCompatActivity {
 	public void connectAndSend (int data){
 
 
-		//Get MAC address from DeviceListActivity via intent
-		Intent intent = getIntent();
 
-		//Get the MAC address from the DeviceListActivty via EXTRA
-		address = intent.getStringExtra(DeviceListActivity.EXTRA_DEVICE_ADDRESS);
-
-		//create device and set the MAC address
-
-		if(btAdapter!=null && address!=null){
+		if(btAdapter!=null && address!=null && !address.equalsIgnoreCase("none")){
 			device = btAdapter.getRemoteDevice(address);
 
 

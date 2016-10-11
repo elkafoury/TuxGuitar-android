@@ -29,15 +29,14 @@ public class DeviceListActivity extends AppCompatActivity {
 
 
     private static final String TAG = "DeviceListActivity";
-    private static final boolean D = true;
+
 
 
     // declare button for launching website and textview for connection status
     Button tlbutton;
     TextView textView1;
 
-    // EXTRA string to s
-    // end on to mainactivity
+
     public static String EXTRA_DEVICE_ADDRESS = "device_address";
 
     // Member fields
@@ -87,6 +86,24 @@ public class DeviceListActivity extends AppCompatActivity {
                     mPairedDevicesArrayAdapter.add(noDevices);
                 }
         }
+        tlbutton  = (Button) findViewById(R.id.back_tg_activity);
+        tlbutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+
+
+                String address = "none";
+                Log.d(TAG, "...address..."+ address);
+                // Make an intent to start next activity while taking an extra which is the MAC address.
+                Intent i = new Intent(DeviceListActivity.this, TGActivity.class);
+
+                i.putExtra(EXTRA_DEVICE_ADDRESS, address);
+                startActivity(i);
+                finish();
+            }
+        });
+
+
     }
 
     // Set up on-click listener for the list (nicked this - unsure)
@@ -103,6 +120,7 @@ public class DeviceListActivity extends AppCompatActivity {
             Intent i = new Intent(DeviceListActivity.this, TGActivity.class);
             i.putExtra(EXTRA_DEVICE_ADDRESS, address);
             startActivity(i);
+            finish();
         }
     };
 

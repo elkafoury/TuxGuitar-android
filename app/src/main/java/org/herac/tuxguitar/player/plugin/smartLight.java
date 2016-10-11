@@ -213,7 +213,7 @@ public  class smartLight implements TGPlugin {
 
         } catch (Exception e) {
 
-            System.out.println("exception caught in setbeat");
+            //System.out.println("exception caught in setbeat");
         }
     }
 

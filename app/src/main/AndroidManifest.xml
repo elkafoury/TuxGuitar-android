@@ -27,7 +27,7 @@
             android:name=".activity.TGActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/app_name"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -79,6 +79,7 @@
             android:name=".activity.DeviceListActivity"
             android:label="@string/title_activity_device_list"
             android:parentActivityName=".activity.TGActivity"
+            android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
