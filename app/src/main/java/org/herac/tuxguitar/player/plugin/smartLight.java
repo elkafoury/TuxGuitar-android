@@ -46,6 +46,10 @@ public  class smartLight implements TGPlugin {
             { 8, 8, 9, 8, 9, 9 },
             { 9, 10, 10, 9, 9, 10 },
             { 9, 10, 10, 9, 10, 10 },
+            { 9, 10, 11, 11, 10, 10 },
+            //this is not going to be used since there is only 21 frets,
+            // just to prevent error in notes above that fret
+            { 9, 10, 10, 9, 10, 10 },
             { 9, 10, 11, 11, 10, 10 }
     };
 
@@ -63,7 +67,7 @@ public  class smartLight implements TGPlugin {
             { 5, 10, 3, 8, 0, 5 },
             { 6, 11, 4, 9, 1, 6 },
             { 7, 0, 5, 10, 2, 7 },
-            { 7, 0, 5, 10,2, 7 },
+          //  { 7, 0, 5, 10,2, 7 },
             { 8, 1,6,11, 3, 8 },
             { 9,2, 7, 0, 4, 9 },
             { 10, 3, 8, 1, 5, 10 },
@@ -74,8 +78,8 @@ public  class smartLight implements TGPlugin {
             { 3, 8, 1, 6, 10, 3 },
             { 4,9, 2, 7, 11, 4 },
             { 5, 10, 3, 8, 0, 5 },
-            { 6, 11, 4, 9, 1, 6 },
-            { 7, 0, 5, 10, 2, 7 }
+            { 6, 11, 4, 9, 1, 6 }
+        //    { 7, 0, 5, 10, 2, 7 }
     };
     // Serial.write(B01000000);// reset SMARTLIGHT
     // Serial.write(64);// reset SMARTLIGHT
@@ -150,12 +154,10 @@ public  class smartLight implements TGPlugin {
             Log.d("turning off ", "string: " + stringIndex + " fret: " + fretIndex);
             //smartlight communications
             if (serial.getConnected() != null && fretIndex!=-1) {
-                //this.serial.writeData(GDPSerialCommunicator.NEW_LINE_ASCII);
                 Log.d("turning off ", "string: " + stringIndex + " fret: " + fretIndex);
                 this.serial.writeData(68);// command to trun led off
                 this.serial.writeData(getNote(fretIndex,smStringIndex ));// command to note
                 this.serial.writeData(getOctave(fretIndex,smStringIndex ));// command to octave
-               // this.serial.flush();
                 this.serial.writeData(64);
                 Log.d("flushed OFF " ," off" );
 
@@ -166,30 +168,6 @@ public  class smartLight implements TGPlugin {
     }
 
 
-/* this needs to be opennnnnnnnned
-    @Override
-    public void doUpdate(int type) {
-        System.out.println("doUpdate()");
-        // elkafoury removed those two:
-//		setBeat();
-//		dumpBeats(this.beat);
-        //elkafoury added the reset
-        if (serial != null) {
-            this.serial.writeData(64); // reset all leds
-        }
-    }
-
-    @Override
-    public void showExternalBeat(TGBeat beat) {
-        System.out.println("showExternalBeat()");
-    }
-
-       @Override
-    public void hideExternalBeat() {
-        // TODO Auto-generated method stub
-
-    }
-*/
     private void setBeat( List lastNotes){
         try{
             if (lastNotes!=null){
@@ -213,10 +191,8 @@ public  class smartLight implements TGPlugin {
 
         } catch (Exception e) {
 
-            //System.out.println("exception caught in setbeat");
         }
     }
-
 
 
     private List lightBeats(TGBeat beat) throws IOException {
@@ -246,20 +222,12 @@ public  class smartLight implements TGPlugin {
                 lastNotes= (List) ((ArrayList) n).clone(); // register this as last note so we can turn it off later
                 for (int i = 0; i < noOfNotes; i++) {
                     note = (TGNoteImpl)n.get(i);
-//
-//													  				if ((noOfNotes>1||noOfNotes==1)&& i==0)
-//													  				{
-//													  					firstNote=true;
-//													  					}else{
-//													  					firstNote=false;
-//													  				}
-//
+
                     fretIndex = note.getValue();
 
                     stringIndex = note.getString() ;
                     smStringIndex=6-stringIndex;
-                    //el traste 0 es al aire - ahora lo ignoramos
-                    //	System.out.println("string: " + stringIndex + " fret: " + fretIndex );
+
                     //smartlight communications
                     Log.d("lighting String " , stringIndex + " fret: " + fretIndex );
                     if (serial != null) {
@@ -269,78 +237,22 @@ public  class smartLight implements TGPlugin {
                         this.serial.writeData(69);// command to trun led on
                         this.serial.writeData(getNote(fretIndex,smStringIndex ));// command to note
                         this.serial.writeData(getOctave(fretIndex,smStringIndex ));// command to octave
-                        //  this.serial.flush();
-                        //	System.out.println("flushing after lighting " );
+
                     }
                 }
             }
 
         }
 
-        // elkafoury test end
-/*		for(int v = 0; v < beat.countVoices(); v ++){
-			TGVoice voice = beat.getVoice( v );
-			Iterator it = voice.getNotes().iterator();
-			while (it.hasNext()) {
-				TGNote note = (TGNote) it.next();
-				int fretIndex = note.getValue();
-
-				int stringIndex = note.getString() ;
-				int smStringIndex=6-stringIndex;
-				//el traste 0 es al aire - ahora lo ignoramos
-				System.out.println("string: " + stringIndex + " fret: " + fretIndex );
-
-			//smartlight
-
-
-				if (serial != null) {
-
- 		            //this.serial.writeData(GDPSerialCommunicator.NEW_LINE_ASCII);
-
-					  this.serial.writeData(69);// command to trun led on
-					  this.serial.writeData(getNote(fretIndex,smStringIndex ));// command to note
-					  this.serial.writeData(getOctave(fretIndex,smStringIndex ));// command to octave
-
-					  this.serial.writeData(68);// command to trun led off
-					  this.serial.writeData(getNote(fretIndex,smStringIndex ));// command to note
-					  this.serial.writeData(getOctave(fretIndex,smStringIndex ));// command to octave
-
-
-		            this.serial.flush();
-		        }
-
-			}
-        }
-	*/
-
-
         this.beatIdx++;
         return lastNotes;
     }
 
-
     public void redraw(int type) throws IOException {
-//        try {
-//            if( type == TGRedrawListener.NORMAL ){
-////
-//            }else if( type == TGRedrawListener.PLAYING_NEW_BEAT ){
-//                System.out.println("doRedraw() BEAT");
-//                // elkafoury moved these two lines here
-//                //List  lastNotes =new ArrayList();
-//                setBeat(this.lastNotes );
-//                this.lastNotes=this.lightBeats(this.beat);
-//
-//            }
-//            //	setBeat();
-//            //	this.dumpBeats(this.beat);
-//        } catch (Exception e) {
-//            // do nothing
-//        }
 
         setBeat(this.lastNotes );
         this.lastNotes=this.lightBeats(this.beat);
     }
-
 
     public String getModuleId()  {
         return MODULE_ID;
