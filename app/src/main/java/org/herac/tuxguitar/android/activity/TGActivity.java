@@ -34,7 +34,7 @@ import org.herac.tuxguitar.editor.action.TGActionProcessor;
 import org.herac.tuxguitar.editor.action.file.TGLoadTemplateAction;
 import org.herac.tuxguitar.util.TGContext;
 
-
+import android.view.WindowManager;
 
 
 public class TGActivity extends AppCompatActivity {
@@ -88,6 +88,8 @@ public class TGActivity extends AppCompatActivity {
 
 		btAdapter = BluetoothAdapter.getDefaultAdapter();       // get Bluetooth adapter
 		checkBTState();
+		// keep screen on Mohamed elkafouri 5/29/2020
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
 
 	}

@@ -30,25 +30,14 @@
 			android:text=":|"
 			style="@style/TabToolbarButton"/>
 
-		<Button
-			android:id="@+id/tab_tb_button_track_solo"
-
-			android:layout_toRightOf="@+id/tab_tb_button_close_repeat"
-			android:text="Solo"
-			android:clickable="false"
-
-			style="@style/TabToolbarButton"/>
-
-
 		<CheckBox
 			android:id="@+id/tab_tb_check_change_solo"
-			android:layout_toRightOf="@+id/tab_tb_button_track_solo"
+			android:layout_toRightOf="@+id/tab_tb_button_close_repeat"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text=""
+			android:text="Solo"
 			android:checked="false"
-
-			/>
+		/>
 
 	</RelativeLayout>
 </org.herac.tuxguitar.android.view.tool.TGTabToolbar>
