@@ -47,9 +47,9 @@ public class TGMainFragment extends TGCachedFragment {
 		return this.findChildViewById(R.id.main_top);
 	}
 	
-//	public View getBottomView() {
-//		return this.findChildViewById(R.id.main_bottom);
-//	}
+	public View getBottomView() {
+		return this.findChildViewById(R.id.main_bottom);
+	}
 	
 	public View getLeftView() {
 		return this.findChildViewById(R.id.main_left);

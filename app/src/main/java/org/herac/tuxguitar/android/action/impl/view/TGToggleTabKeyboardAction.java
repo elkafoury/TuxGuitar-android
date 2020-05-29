@@ -3,6 +3,7 @@ package org.herac.tuxguitar.android.action.impl.view;
 import org.herac.tuxguitar.action.TGActionContext;
 import org.herac.tuxguitar.android.action.TGActionBase;
 import org.herac.tuxguitar.android.view.keyboard.TGTabKeyboardController;
+import org.herac.tuxguitar.android.view.tool.TGTabToolbarController;
 import org.herac.tuxguitar.util.TGContext;
 
 public class TGToggleTabKeyboardAction extends TGActionBase{
@@ -15,5 +16,6 @@ public class TGToggleTabKeyboardAction extends TGActionBase{
 	
 	protected void processAction(TGActionContext context) {
 		TGTabKeyboardController.getInstance(getContext()).toggleVisibility();
+		TGTabToolbarController.getInstance(getContext()).toggleVisibility();
 	}
 }
