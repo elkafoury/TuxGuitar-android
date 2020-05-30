@@ -18,9 +18,20 @@ public abstract class TGTempo {
 	private static final int SECOND_IN_MILLIS = 1000;
 	
 	private int value;
-	
+
+	private int percentValue;
+
+	public int getPercentValue() {
+		return percentValue;
+	}
+
+	public void setPercentValue(int percentValue) {
+		this.percentValue = percentValue;
+	}
+
 	public TGTempo(){
 		this.value = 120;
+		percentValue =100;
 	}
 	
 	public int getValue() {

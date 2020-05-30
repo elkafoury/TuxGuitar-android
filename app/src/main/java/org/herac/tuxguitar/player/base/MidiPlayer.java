@@ -81,7 +81,6 @@ public class MidiPlayer{
 	protected long tickPosition;
 	
 	private boolean tryOpenFistDevice;
-	
 	protected TGLock lock = new TGLock();
 	
 	private MidiPlayer(TGContext context) {
@@ -89,7 +88,7 @@ public class MidiPlayer{
 		this.lock = new TGLock();
 		this.volume = MAX_VOLUME;
 	}
-	
+
 	public void lock() {
 		this.lock.lock();
 	}
@@ -201,7 +200,8 @@ public class MidiPlayer{
 			this.updateControllers();
 			this.updateDefaultControllers();
 			this.setMetronomeEnabled(isMetronomeEnabled());
-			this.getCountDown().setTempoPercent(getMode().getCurrentPercent());
+			//this.getCountDown().setTempoPercent(getMode().getCurrentPercent());
+			this.getCountDown().setTempoPercent(this.getSong().getTempoPercent());
 			this.changeTickPosition();
 			
 			new Thread(new Runnable() {
@@ -474,7 +474,8 @@ public class MidiPlayer{
 			this.lock();
 			
 			MidiSequenceParser midiSequenceParser = new MidiSequenceParser(this.documentManager.getSong(), this.documentManager.getSongManager(), MidiSequenceParser.DEFAULT_PLAY_FLAGS);
-			midiSequenceParser.setTempoPercent(getMode().getCurrentPercent());
+			//midiSequenceParser.setTempoPercent(getMode().getCurrentPercent());
+			midiSequenceParser.setTempoPercent(this.getSong().getTempoPercent());
 			midiSequenceParser.setSHeader( getLoopSHeader() );
 			midiSequenceParser.setEHeader( getLoopEHeader() );
 			midiSequenceParser.setMetronomeChannelId(getPercussionChannelId());

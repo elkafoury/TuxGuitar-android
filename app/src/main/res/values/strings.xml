@@ -218,10 +218,19 @@
 
     <!-- Tempo dialog -->
     <string name="tempo_dlg_title">Change Tempo</string>
+    <string name="tempo_dlg_speed_title">Change Tempo Percent</string>
     <string name="tempo_dlg_tempo_label">Tempo:</string>
+    <string name="tempo_dlg_speed_label">Select Tempo Percent:</string>
+
     <string name="tempo_dlg_options_apply_to_song">Apply this tempo in the whole song</string>
     <string name="tempo_dlg_options_apply_to_end">Apply this tempo to the end</string>
     <string name="tempo_dlg_options_apply_to_next_marker">Apply this tempo to the next tempo marker</string>
+
+    <string name="percent_dlg_options_100">100</string>
+    <string name="percent_dlg_options_75">75</string>
+    <string name="percent_dlg_options_50">50</string>
+    <string name="percent_dlg_options_25">25</string>
+
 
     <!-- Clef dialog -->
     <string name="clef_dlg_title">Change Clef</string>

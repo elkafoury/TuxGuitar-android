@@ -27,11 +27,15 @@ public abstract class TGSong {
 	private String date;
 	private String copyright;
 	private String writer;
+
+
+
 	private String transcriber;
 	private String comments;
 	private List<TGTrack> tracks;
 	private List<TGMeasureHeader> measureHeaders;
 	private List<TGChannel> channels;
+	private int tempoPercent =100;
 	
 	public TGSong() {
 		this.name = new String();
@@ -256,5 +260,12 @@ public abstract class TGSong {
 			TGTrack track = tracks.next();
 			this.addTrack(track.clone(factory, this));
 		}
+	}
+	public int getTempoPercent() {
+		return tempoPercent;
+	}
+
+	public void setTempoPercent(int tempoPercent) {
+		this.tempoPercent = tempoPercent;
 	}
 }

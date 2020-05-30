@@ -39,12 +39,12 @@ public class TGTempoDialog extends TGDialog {
 		spinner.setSelection(adapter.getPosition(Integer.valueOf(tempo.getValue())));
 		
 		final RadioGroup applyToGroup = (RadioGroup) view.findViewById(R.id.tempo_dlg_options_group);
-		
+
 		final int applyToDefault = TGChangeTempoRangeAction.APPLY_TO_ALL;
 		this.updateRadio((RadioButton)view.findViewById(R.id.tempo_dlg_options_apply_to_song), TGChangeTempoRangeAction.APPLY_TO_ALL, applyToDefault);
 		this.updateRadio((RadioButton)view.findViewById(R.id.tempo_dlg_options_apply_to_end), TGChangeTempoRangeAction.APPLY_TO_END, applyToDefault);
 		this.updateRadio((RadioButton)view.findViewById(R.id.tempo_dlg_options_apply_to_next_marker), TGChangeTempoRangeAction.APPLY_TO_NEXT, applyToDefault);
-		
+
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 		builder.setTitle(R.string.tempo_dlg_title);
 		builder.setView(view);
@@ -100,4 +100,5 @@ public class TGTempoDialog extends TGDialog {
 		tgActionProcessor.setAttribute(TGChangeTempoRangeAction.ATTRIBUTE_APPLY_TO, applyTo);
 		tgActionProcessor.processOnNewThread();
 	}
+
 }
