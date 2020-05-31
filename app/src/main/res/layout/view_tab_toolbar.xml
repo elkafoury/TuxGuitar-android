@@ -18,11 +18,17 @@
 			android:text="Speed"
 					style="@style/TabToolbarButton"
 		/>
+		<Button
+			android:id="@+id/tab_tb_button_loop"
+			android:layout_toRightOf="@+id/tab_tb_button_speed"
+			android:text="Loop"
+			style="@style/TabToolbarButton"
+			/>
 
 		<Button
 			android:id="@+id/tab_tb_button_open_repeat"
 
-			android:layout_toRightOf="@+id/tab_tb_button_speed"
+			android:layout_toRightOf="@+id/tab_tb_button_loop"
 			android:text="|:"
 			style="@style/TabToolbarButton"/>
 

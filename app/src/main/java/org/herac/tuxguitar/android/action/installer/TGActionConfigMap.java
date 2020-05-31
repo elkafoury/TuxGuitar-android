@@ -188,6 +188,7 @@ import org.herac.tuxguitar.editor.undo.impl.track.TGUndoableRemoveTrackControlle
 import org.herac.tuxguitar.editor.undo.impl.track.TGUndoableTrackGenericController;
 import org.herac.tuxguitar.editor.undo.impl.track.TGUndoableTrackInfoController;
 import org.herac.tuxguitar.editor.undo.impl.track.TGUndoableTrackSoloMuteController;
+import org.herac.tuxguitar.android.action.impl.transport.TGTransportModeAction;
 
 public class TGActionConfigMap extends TGActionMap<TGActionConfig> {
 	
@@ -355,6 +356,9 @@ public class TGActionConfigMap extends TGActionMap<TGActionConfig> {
 		//transport actions
 		this.map(TGTransportPlayAction.NAME, LOCKABLE, UPDATE_ITEMS_CTL);
 		this.map(TGTransportStopAction.NAME, LOCKABLE, UPDATE_ITEMS_CTL);
+
+		//TGTransportModeAction;
+		this.map(TGTransportModeAction.NAME, LOCKABLE, UPDATE_ITEMS_CTL);
 		
 		//layout actions
 		this.map(TGSetLayoutScaleAction.NAME, LOCKABLE | DISABLE_ON_PLAY, UPDATE_SONG_CTL);

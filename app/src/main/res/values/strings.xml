@@ -231,6 +231,12 @@
     <string name="percent_dlg_options_50">50</string>
     <string name="percent_dlg_options_25">25</string>
 
+    <!--- loop dialog -->
+
+    <string name="loop_dlg_start_measure_label">Start Measure</string>
+    <string name="loop_dlg_end_measure_label">End Measure</string>
+    <string name="loop_dlg_title">Play Loop</string>
+
 
     <!-- Clef dialog -->
     <string name="clef_dlg_title">Change Clef</string>

@@ -151,6 +151,7 @@ import org.herac.tuxguitar.editor.action.track.TGSetTrackMuteAction;
 import org.herac.tuxguitar.editor.action.track.TGSetTrackNameAction;
 import org.herac.tuxguitar.editor.action.track.TGSetTrackSoloAction;
 import org.herac.tuxguitar.util.TGContext;
+import org.herac.tuxguitar.android.action.impl.transport.TGTransportModeAction;
 
 public class TGActionInstaller {
 	
@@ -310,7 +311,10 @@ public class TGActionInstaller {
 		//transport actions
 		installAction(new TGTransportPlayAction(context));
 		installAction(new TGTransportStopAction(context));
-		
+
+		//transport
+		installAction(new TGTransportModeAction(context));
+
 		//layout actions
 		installAction(new TGSetLayoutScaleAction(context));
 		installAction(new TGSetScoreEnabledAction(context));

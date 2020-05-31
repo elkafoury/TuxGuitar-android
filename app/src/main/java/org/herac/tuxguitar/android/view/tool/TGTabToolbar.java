@@ -17,6 +17,7 @@ import org.herac.tuxguitar.android.view.dialog.TGDialogController;
 import org.herac.tuxguitar.android.view.dialog.repeat.TGRepeatCloseDialogController;
 import org.herac.tuxguitar.android.view.dialog.tempo.TGTempoDialogController;
 import org.herac.tuxguitar.android.view.dialog.speed.TGSpeedDialogController;
+import org.herac.tuxguitar.android.view.dialog.loop.TGLoopDialogController;
 import org.herac.tuxguitar.document.TGDocumentContextAttributes;
 import org.herac.tuxguitar.editor.action.composition.TGRepeatOpenAction;
 import org.herac.tuxguitar.editor.action.duration.TGDecrementDurationAction;
@@ -55,7 +56,7 @@ public class TGTabToolbar extends FrameLayout {
 
 	//	findViewById(R.id.tab_tb_button_tempo).setOnClickListener(createContextDialogActionListener(new TGTempoDialogController()));
 		findViewById(R.id.tab_tb_button_speed).setOnClickListener(createContextDialogActionListener(new TGSpeedDialogController()));
-
+		findViewById(R.id.tab_tb_button_loop).setOnClickListener(createContextDialogActionListener(new TGLoopDialogController()));
 		findViewById(R.id.tab_tb_button_open_repeat).setOnClickListener(createContextActionListener(TGRepeatOpenAction.NAME));
 		findViewById(R.id.tab_tb_button_close_repeat).setOnClickListener(createContextDialogActionListener(new TGRepeatCloseDialogController()));
 	//  	findViewById(R.id.tab_tb_button_track_solo).setOnClickListener(createContextActionListener(TGChangeTrackSoloAction.NAME));
