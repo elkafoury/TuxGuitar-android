@@ -78,8 +78,9 @@ public  class smartLight implements TGPlugin {
             { 3, 8, 1, 6, 10, 3 },
             { 4,9, 2, 7, 11, 4 },
             { 5, 10, 3, 8, 0, 5 },
-            { 6, 11, 4, 9, 1, 6 }
-        //    { 7, 0, 5, 10, 2, 7 }
+            { 6, 11, 4, 9, 1, 6 },
+           { 7, 0, 5, 10, 2, 7 },
+            { 8, 1,6,11, 3, 8 }
     };
     // Serial.write(B01000000);// reset SMARTLIGHT
     // Serial.write(64);// reset SMARTLIGHT
@@ -116,11 +117,22 @@ public  class smartLight implements TGPlugin {
     }
 
     public byte getOctave(int fret,int string) {
-        return octaves[fret][string];
+        if (fret < Notes.length-2) {
+            return octaves[fret][string];
+        }else {
+            return octaves[0][string];
+        }
+
+
     }
 
     public byte getNote(int fret,int string) {
-        return Notes[fret][string];
+       if (fret < Notes.length-2) {
+           return Notes[fret][string];
+       }else {
+           return Notes[0][string];
+       }
+
     }
 
     public void connect(TGContext context) throws TGPluginException {
