@@ -44,6 +44,21 @@
 			app:layout_gravity="fill"
 			app:layout_columnSpan="2"
 			style="@style/DialogSectionSpacer" />
+		<TextView
+			android:id="@+id/loop_speed_dlg_label"
+			android:text="@string/loop_dlg_speed_label"
+			app:layout_gravity="fill_horizontal|center_vertical"
+			style="@style/TextViewLabel" />
+
+		<Spinner
+			android:id="@+id/loop_dlg_speed_value"
+			app:layout_gravity="fill_horizontal|center_vertical" />
+
+		<android.support.v7.widget.Space
+			app:layout_gravity="fill"
+			app:layout_columnSpan="2"
+			style="@style/DialogSectionSpacer" />
+
 
 	</android.support.v7.widget.GridLayout>
 

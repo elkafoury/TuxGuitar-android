@@ -29,6 +29,7 @@ import org.herac.tuxguitar.android.action.impl.transport.TGTransportModeAction;
 public class TGLoopDialog extends TGDialog {
 	protected Spinner customFrom;
 	protected Spinner customTo;
+	protected Spinner speed;
 	protected CheckBox isLoop;
 	int fromVal = 0;
 	int toVal = 0;
@@ -44,7 +45,7 @@ public class TGLoopDialog extends TGDialog {
 		final MidiPlayerMode mode = MidiPlayer.getInstance(findContext() ).getMode();
 		final TGSong song = getAttribute(TGDocumentContextAttributes.ATTRIBUTE_SONG);
 		final TGMeasureHeader header = getAttribute(TGDocumentContextAttributes.ATTRIBUTE_HEADER);
-	//	final TGMeasure measure = song.
+
 		ArrayAdapter<Integer> fromAdapter = new ArrayAdapter<Integer>(getActivity(), android.R.layout.simple_spinner_item, createFromMeasureValues());
 		
 		this.customFrom = (Spinner) view.findViewById(R.id.loop_dlg_sloop_value);
@@ -65,6 +66,21 @@ public class TGLoopDialog extends TGDialog {
 
  		isLoop.setChecked(mode.isLoop());
 
+
+		//speed
+		ArrayAdapter<Integer> speedAdapter = new ArrayAdapter<Integer>(getActivity(), android.R.layout.simple_spinner_item, createSpeedValues());
+
+		this.speed = (Spinner) view.findViewById(R.id.loop_dlg_speed_value);
+		this.speed.setAdapter(speedAdapter);
+		final int applyToPercent = song.getTempoPercent()*1/10-1;
+		Log.d("percent is",  Integer.toString(applyToPercent));
+		if(Integer.valueOf(applyToPercent) != null) {
+			this.speed.setSelection(Integer.valueOf(applyToPercent));
+		}
+
+
+
+
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 		builder.setTitle(R.string.loop_dlg_title);
 		builder.setView(view);
@@ -73,6 +89,7 @@ public class TGLoopDialog extends TGDialog {
 				Log.d("customfrom: ",  Integer.toString(     parseValue(customFrom)   ) );
 				Log.d("customTo: ",  Integer.toString(     parseValue(customTo)   ) );
 				changeLoop(song, header, parseValue(customFrom),  parseValue(customTo), isLoop.isChecked());
+				changeTempoPercent( parseValue(speed));
 				dialog.dismiss();
 			}
 		});
@@ -108,7 +125,18 @@ public class TGLoopDialog extends TGDialog {
 		}
 		return items;
 	}
-	
+
+	public Integer[] createSpeedValues() {
+
+
+		int length = 10;
+		Integer[] items = new Integer[10];
+
+		for (int i = 0; i < length; i++) {
+			items[i] = (Integer.valueOf(i)*10)+10;
+		}
+		return items;
+	}
 	public int parseValue(Spinner s) {
 		if(s!= null && s.getSelectedItem()!= null){
 			return ((Integer)s.getSelectedItem()).intValue();
@@ -144,6 +172,11 @@ public class TGLoopDialog extends TGDialog {
 		tgActionProcessor.setAttribute(TGTransportModeAction.ATTRIBUTE_LOOP_E_HEADER, end >start? end : start );
 		Log.d("TGTransportModeAction: " , Boolean.toString(loop));
 		tgActionProcessor.process();
+
+	}
+	public void changeTempoPercent( Integer applyTo) {
+		final TGSong song = getAttribute(TGDocumentContextAttributes.ATTRIBUTE_SONG);
+		song.setTempoPercent(applyTo);
 
 	}
 

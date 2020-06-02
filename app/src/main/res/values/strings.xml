@@ -236,6 +236,7 @@
 
     <string name="loop_dlg_start_measure_label">Start Measure</string>
     <string name="loop_dlg_end_measure_label">End Measure</string>
+    <string name="loop_dlg_speed_label">Speed</string>
     <string name="loop_dlg_title">Play Loop</string>
 
 
