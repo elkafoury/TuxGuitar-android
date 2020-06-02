@@ -9,6 +9,12 @@
         android:visible="false"
         app:showAsAction="always"/>
     <item
+        android:id="@+id/menu_loop"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        android:title="@string/menu_tab_loop"
+        android:visible="true"
+        app:showAsAction="always"/>
+    <item
         android:id="@+id/menu_tab_keyboard_toggle"
         android:icon="@drawable/ic_mode_edit_white_24dp"
         android:title="@string/menu_tab_keyboard_toggle"

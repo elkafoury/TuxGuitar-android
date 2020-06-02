@@ -43,6 +43,7 @@ import org.herac.tuxguitar.android.action.impl.track.TGGoLastTrackAction;
 import org.herac.tuxguitar.android.action.impl.track.TGGoNextTrackAction;
 import org.herac.tuxguitar.android.action.impl.track.TGGoPreviousTrackAction;
 import org.herac.tuxguitar.android.action.impl.track.TGGoToTrackAction;
+import org.herac.tuxguitar.android.action.impl.transport.TGOpenTransportModeDialogAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportPlayAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportStopAction;
 import org.herac.tuxguitar.android.action.impl.view.TGBluetoothAction;
@@ -359,6 +360,8 @@ public class TGActionConfigMap extends TGActionMap<TGActionConfig> {
 
 		//TGTransportModeAction;
 		this.map(TGTransportModeAction.NAME, LOCKABLE, UPDATE_ITEMS_CTL);
+		this.map(TGOpenTransportModeDialogAction.NAME, LOCKABLE, UPDATE_ITEMS_CTL);
+
 		
 		//layout actions
 		this.map(TGSetLayoutScaleAction.NAME, LOCKABLE | DISABLE_ON_PLAY, UPDATE_SONG_CTL);

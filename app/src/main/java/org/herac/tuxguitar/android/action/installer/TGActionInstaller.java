@@ -44,6 +44,7 @@ import org.herac.tuxguitar.android.action.impl.track.TGGoLastTrackAction;
 import org.herac.tuxguitar.android.action.impl.track.TGGoNextTrackAction;
 import org.herac.tuxguitar.android.action.impl.track.TGGoPreviousTrackAction;
 import org.herac.tuxguitar.android.action.impl.track.TGGoToTrackAction;
+import org.herac.tuxguitar.android.action.impl.transport.TGOpenTransportModeDialogAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportPlayAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportStopAction;
 import org.herac.tuxguitar.android.action.impl.view.TGBluetoothAction;
@@ -314,6 +315,7 @@ public class TGActionInstaller {
 
 		//transport
 		installAction(new TGTransportModeAction(context));
+		installAction(new TGOpenTransportModeDialogAction(context));
 
 		//layout actions
 		installAction(new TGSetLayoutScaleAction(context));

@@ -4,6 +4,7 @@ import org.herac.tuxguitar.android.R;
 import org.herac.tuxguitar.android.action.TGActionProcessorListener;
 import org.herac.tuxguitar.android.action.impl.gui.TGOpenFragmentAction;
 import org.herac.tuxguitar.android.action.impl.gui.TGOpenMenuAction;
+import org.herac.tuxguitar.android.action.impl.transport.TGOpenTransportModeDialogAction;
 import org.herac.tuxguitar.android.action.impl.transport.TGTransportPlayAction;
 import org.herac.tuxguitar.android.action.impl.view.TGBluetoothAction;
 import org.herac.tuxguitar.android.action.impl.view.TGToggleTabKeyboardAction;
@@ -21,6 +22,8 @@ import org.herac.tuxguitar.android.menu.context.impl.TGVelocityMenu;
 import org.herac.tuxguitar.android.menu.context.impl.TGViewMenu;
 import org.herac.tuxguitar.android.menu.util.TGToggleStyledIconHandler;
 import org.herac.tuxguitar.android.menu.util.TGToggleStyledIconHelper;
+import org.herac.tuxguitar.android.view.dialog.loop.TGLoopDialogController;
+import org.herac.tuxguitar.android.view.dialog.speed.TGSpeedDialogController;
 import org.herac.tuxguitar.player.base.MidiPlayer;
 import org.herac.tuxguitar.util.TGContext;
 import org.herac.tuxguitar.util.singleton.TGSingletonFactory;
@@ -64,6 +67,13 @@ public class TGMainMenu {
 
 		this.getMenu().findItem(R.id.menu_tab_keyboard_toggle).setOnMenuItemClickListener(createActionProcessor(TGToggleTabKeyboardAction.NAME));
 		this.getMenu().findItem(R.id.menu_transport_play).setOnMenuItemClickListener(createActionProcessor(TGTransportPlayAction.NAME));
+		this.getMenu().findItem(R.id.menu_loop).setOnMenuItemClickListener( createActionProcessor( TGOpenTransportModeDialogAction.NAME));
+
+
+		//	findViewById(R.id.tab_tb_button_tempo).setOnClickListener(createContextDialogActionListener(new TGTempoDialogController()));
+	//	findViewById(R.id.tab_tb_button_speed).setOnClickListener(createContextDialogActionListener(new TGSpeedDialogController()));
+	//	findViewById(R.id.tab_tb_button_loop).setOnClickListener(createContextDialogActionListener(new TGLoopDialogController()));
+
 		this.getMenu().findItem(R.id.menu_edit).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGEditMenu(getActivity())));
 		this.getMenu().findItem(R.id.menu_view).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGViewMenu(getActivity())));
 		this.getMenu().findItem(R.id.menu_composition).setOnMenuItemClickListener(createContextMenuActionProcessor(new TGCompositionMenu(getActivity())));
