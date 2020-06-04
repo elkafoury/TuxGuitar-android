@@ -31,6 +31,7 @@ public class TGTabKeyboard extends FrameLayout {
 	public void onFinishInflate() {
 		this.attachView();
 		this.addListeners();
+		this.toggleVisibility();
 	}
 	
 	public void attachView() {
