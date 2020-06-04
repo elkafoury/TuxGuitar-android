@@ -7,6 +7,7 @@
         android:id="@+id/main_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         android:layout_alignParentTop="true" >
         <include layout="@layout/view_tab_toolbar" />
     </FrameLayout>
@@ -40,11 +41,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/main_bottom"
-        android:layout_below="@+id/main_top"
+
         android:layout_toLeftOf="@+id/main_right"
         android:layout_toRightOf="@+id/main_left" >
 
         <include layout="@layout/view_tablature" />
     </FrameLayout>
-
+    <!--  android:layout_below="@+id/main_top" -->
 </RelativeLayout>

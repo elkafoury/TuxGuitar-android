@@ -8,6 +8,7 @@ import org.herac.tuxguitar.action.TGActionManager;
 import org.herac.tuxguitar.android.R;
 import org.herac.tuxguitar.android.activity.TGActivity;
 import org.herac.tuxguitar.android.activity.TGActivityController;
+import org.herac.tuxguitar.android.menu.options.TGMainMenu;
 import org.herac.tuxguitar.document.TGDocumentContextAttributes;
 import org.herac.tuxguitar.editor.action.TGActionBase;
 import org.herac.tuxguitar.song.models.TGTrack;
@@ -49,6 +50,9 @@ public class TGChangeTrackSoloAction extends TGActionBase {
 						activityController.getActivity().runOnUiThread(new Runnable() {
 							@Override
 							public void run() {
+							//	TGMainMenu.getInstance(this.getContext());
+						//		.findItem(R.id.menu_check_solo)
+								TGMainMenu.getInstance(getContext()).getMenu().findItem(R.id.menu_check_solo).setChecked(track.isSolo());
 									final	CheckBox cb = (CheckBox) activityController.getActivity().findViewById(R.id.tab_tb_check_change_solo);
                                     if (track.isSolo()) {
                                         cb.setChecked(true);
